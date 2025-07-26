@@ -60,7 +60,7 @@ internal class IncidentWorker_PokemonHerdMigration : IncidentWorker
         PawnKindDef singlePokemonKind = null;
         if (source.Any())
         {
-            if (source.TryRandomElementByWeight(x => Mathf.Lerp(0.2f, 1f, x.RaceProps.wildness), out singlePokemonKind))
+            if (source.TryRandomElementByWeight(x => Mathf.Lerp(0.2f, 1f, x.race.GetStatValueAbstract(StatDefOf.Wildness)), out singlePokemonKind))
             {
             }
             else

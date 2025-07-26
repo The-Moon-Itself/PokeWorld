@@ -22,7 +22,7 @@ internal class Designator_PutInBall : Designator
         hotKey = KeyBindingDefOf.Misc7;
     }
 
-    public override int DraggableDimensions => 2;
+    public override DrawStyleCategoryDef DrawStyleCategory => DrawStyleCategoryDefOf.FilledRectangle;
 
     protected override DesignationDef Designation => DefDatabase<DesignationDef>.GetNamed("PW_PutInBall");
 
@@ -41,7 +41,7 @@ internal class Designator_PutInBall : Designator
     public override AcceptanceReport CanDesignateThing(Thing t)
     {
         var pawn = t as Pawn;
-        if (pawn != null && pawn.def.race.Animal && pawn.TryGetComp<CompPokemon>() != null &&
+        if (pawn != null && pawn.TryGetComp<CompPokemon>() != null &&
             pawn.Faction == Faction.OfPlayer && Map.designationManager.DesignationOn(pawn, Designation) == null &&
             !pawn.InAggroMentalState) return true;
         return false;

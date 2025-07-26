@@ -64,39 +64,62 @@ public static class Toils_RecipeCraftPokemon
         };
         toil.tickAction = delegate
         {
-            var actor2 = toil.actor;
-            var curJob2 = actor2.jobs.curJob;
-            var jobDriver_CraftPokemon = (JobDriver_CraftPokemon)actor2.jobs.curDriver;
-            var unfinishedThing2 = curJob2.GetTarget(TargetIndex.B).Thing as UnfinishedThing;
-            if (unfinishedThing2 is { Destroyed: true })
+            Pawn actor = toil.actor;
+            Thing thing = actor.jobs.curJob.GetTarget(TargetIndex.B).Thing;
+            if (thing is UnfinishedThing && thing.Destroyed)
             {
-                actor2.jobs.EndCurrentJob(JobCondition.Incompletable);
+                actor.jobs.EndCurrentJob(JobCondition.Incompletable);
+            }
+            else if (toil.actor.CurJob.GetTarget(TargetIndex.A).Thing is IBillGiverWithTickAction billGiverWithTickAction)
+            {
+                billGiverWithTickAction.UsedThisTick();
+            }
+        };
+        toil.tickIntervalAction = delegate(int delta)
+        {
+            var actor = toil.actor;
+            var curJob = actor.jobs.curJob;
+            var jobDriver_CraftPokemon = (JobDriver_CraftPokemon)actor.jobs.curDriver;
+            var unfinishedThing = curJob.GetTarget(TargetIndex.B).Thing as UnfinishedThing;
+            if (unfinishedThing is { Destroyed: true })
+            {
+                actor.jobs.EndCurrentJob(JobCondition.Incompletable);
             }
             else
             {
-                jobDriver_CraftPokemon.ticksSpentDoingRecipeWork++;
-                curJob2.bill.Notify_PawnDidWork(actor2);
+                jobDriver_CraftPokemon.ticksSpentDoingRecipeWork += delta;
+                curJob.bill.Notify_PawnDidWork(actor);
                 (toil.actor.CurJob.GetTarget(TargetIndex.A).Thing as IBillGiverWithTickAction)?.UsedThisTick();
-                if (curJob2.RecipeDef.workSkill != null && curJob2.RecipeDef.UsesUnfinishedThing)
-                    actor2.skills.Learn(curJob2.RecipeDef.workSkill, 0.1f * curJob2.RecipeDef.workSkillLearnFactor);
-                var num = curJob2.RecipeDef.workSpeedStat == null
+                if (curJob.RecipeDef.workSkill != null && curJob.RecipeDef.UsesUnfinishedThing)
+                    actor.skills.Learn(curJob.RecipeDef.workSkill, 0.1f * curJob.RecipeDef.workSkillLearnFactor);
+                var num = curJob.RecipeDef.workSpeedStat == null
                     ? 1f
-                    : actor2.GetStatValue(curJob2.RecipeDef.workSpeedStat);
-                if (curJob2.RecipeDef.workTableSpeedStat != null)
+                    : actor.GetStatValue(curJob.RecipeDef.workSpeedStat);
+                if (curJob.RecipeDef.workTableSpeedStat != null)
                     if (jobDriver_CraftPokemon.BillGiver is Building_WorkTable building_WorkTable)
-                        num *= building_WorkTable.GetStatValue(curJob2.RecipeDef.workTableSpeedStat);
+                        num *= building_WorkTable.GetStatValue(curJob.RecipeDef.workTableSpeedStat);
                 if (DebugSettings.fastCrafting) num *= 30f;
-                jobDriver_CraftPokemon.workLeft -= num;
-                if (unfinishedThing2 != null) unfinishedThing2.workLeft = jobDriver_CraftPokemon.workLeft;
-                actor2.GainComfortFromCellIfPossible(true);
+                jobDriver_CraftPokemon.workLeft -= num * (float)delta;
+                if (unfinishedThing != null)
+                {
+                    if (unfinishedThing.debugCompleted)
+                    {
+                        unfinishedThing.workLeft = (jobDriver_CraftPokemon.workLeft = 0f);
+                    }
+                    else
+                    {
+                        unfinishedThing.workLeft = jobDriver_CraftPokemon.workLeft;
+                    }
+                }
+                actor.GainComfortFromCellIfPossible(delta, true);
                 if (jobDriver_CraftPokemon.workLeft <= 0f)
                 {
+                    curJob.bill.Notify_BillWorkFinished(actor);
                     jobDriver_CraftPokemon.ReadyForNextToil();
                 }
-                else if (curJob2.bill.recipe.UsesUnfinishedThing)
+                else if (curJob.bill.recipe.UsesUnfinishedThing && Find.TickManager.TicksGame - jobDriver_CraftPokemon.billStartTick >= 3000 && actor.IsHashIntervalTick(1000, delta))
                 {
-                    var num2 = Find.TickManager.TicksGame - jobDriver_CraftPokemon.billStartTick;
-                    if (num2 >= 3000 && num2 % 1000 == 0) actor2.jobs.CheckForJobOverride();
+                    actor.jobs.CheckForJobOverride();
                 }
             }
         };

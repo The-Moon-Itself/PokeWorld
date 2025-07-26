@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using HarmonyLib;
 using RimWorld;
+using RimWorld.Planet;
 using Verse;
 
 namespace PokeWorld;
@@ -9,7 +10,7 @@ namespace PokeWorld;
 [HarmonyPatch(nameof(ManhunterPackGenStepUtility.TryGetAnimalsKind))]
 internal class ManhunterPackGenStepUtility_TryGetAnimalsKind_Patch
 {
-    public static bool Prefix(float __0, int __1, out PawnKindDef __2, ref bool __result)
+    public static bool Prefix(float __0, PlanetTile __1, out PawnKindDef __2, ref bool __result)
     {
         if (PokeWorldSettings.OkforPokemon())
         {
@@ -23,7 +24,7 @@ internal class ManhunterPackGenStepUtility_TryGetAnimalsKind_Patch
             if (list.Count <= 0)
                 for (var j = 0; j < 50; j++)
                 {
-                    if (!Pokemon_ManhunterPackIncidentUtility.TryFindManhunterAnimalKind(__0, -1, out list)) continue;
+                    if (!Pokemon_ManhunterPackIncidentUtility.TryFindManhunterAnimalKind(__0, PlanetTile.Invalid, out list)) continue;
                     break;
                 }
 
@@ -50,7 +51,7 @@ internal class ManhunterPackGenStepUtility_TryGetAnimalsKind_Patch
             if (kind == null)
                 for (var j = 0; j < 50; j++)
                 {
-                    if (!AggressiveAnimalIncidentUtility.TryFindAggressiveAnimalKind(__0, -1, out kind)) continue;
+                    if (!AggressiveAnimalIncidentUtility.TryFindAggressiveAnimalKind(__0, PlanetTile.Invalid, out kind)) continue;
                     break;
                 }
 

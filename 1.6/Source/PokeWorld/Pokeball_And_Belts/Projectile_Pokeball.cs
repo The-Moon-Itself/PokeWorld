@@ -9,14 +9,12 @@ public class Projectile_Pokeball : Projectile
 {
     private Sustainer ambientSustainer;
     public float bonusBall;
-    public Thing equipment;
     private int ticksToDetonation;
 
     public override void ExposeData()
     {
         base.ExposeData();
         Scribe_Values.Look(ref ticksToDetonation, "PW_ticksToDetonation");
-        Scribe_References.Look(ref equipment, "PW_equipment");
         Scribe_Values.Look(ref bonusBall, "PW_bonusBall");
     }
 
@@ -47,9 +45,9 @@ public class Projectile_Pokeball : Projectile
         Thing equipment = null
     )
     {
-        Launch(launcher, Position.ToVector3Shifted(), usedTarget, intendedTarget, hitFlags, equipment);
+        Launch(launcher, Position.ToVector3Shifted(), usedTarget, intendedTarget, hitFlags, false, equipment);
     }
-
+    /*
     public void Launch(
         Thing launcher, Vector3 origin, LocalTargetInfo usedTarget, LocalTargetInfo intendedTarget,
         ProjectileHitFlags hitFlags, Thing equipment = null, ThingDef targetCoverDef = null
@@ -72,6 +70,56 @@ public class Projectile_Pokeball : Projectile
         {
             equipmentDef = null;
             weaponDamageMultiplier = 1f;
+        }
+
+        destination = usedTarget.Cell.ToVector3Shifted() + Gen.RandomHorizontalVector(0.3f);
+        ticksToImpact = Mathf.CeilToInt(StartingTicksToImpact);
+        if (ticksToImpact < 1) ticksToImpact = 1;
+        if (!def.projectile.soundAmbient.NullOrUndefined())
+        {
+            var info = SoundInfo.InMap(this, MaintenanceType.PerTick);
+            ambientSustainer = def.projectile.soundAmbient.TrySpawnSustainer(info);
+        }
+    }
+    */
+
+    public override void Launch(
+        Thing launcher, Vector3 origin, LocalTargetInfo usedTarget, LocalTargetInfo intendedTarget,
+        ProjectileHitFlags hitFlags, bool preventFriendlyFire = false, Thing equipment = null, ThingDef targetCoverDef = null
+    )
+    {
+        this.launcher = launcher;
+        this.origin = origin;
+        this.usedTarget = usedTarget;
+        this.intendedTarget = intendedTarget;
+        this.targetCoverDef = targetCoverDef;
+        this.preventFriendlyFire = preventFriendlyFire;
+        HitFlags = hitFlags;
+        stoppingPower = def.projectile.stoppingPower;
+        if (stoppingPower == 0f && def.projectile.damageDef != null)
+        {
+            stoppingPower = def.projectile.damageDef.defaultStoppingPower;
+        }
+        if (equipment != null)
+        {
+            this.equipment = equipment;
+            equipmentDef = equipment.def;
+            equipment.TryGetQuality(out equipmentQuality);
+            if (equipment.TryGetComp(out CompUniqueWeapon comp))
+            {
+                foreach (WeaponTraitDef item in comp.TraitsListForReading)
+                {
+                    if (!Mathf.Approximately(item.additionalStoppingPower, 0f))
+                    {
+                        stoppingPower += item.additionalStoppingPower;
+                    }
+                }
+            }
+            bonusBall = this.equipment.GetStatValue(DefDatabase<StatDef>.GetNamed("PW_BonusBall"));
+        }
+        else
+        {
+            equipmentDef = null;
         }
 
         destination = usedTarget.Cell.ToVector3Shifted() + Gen.RandomHorizontalVector(0.3f);

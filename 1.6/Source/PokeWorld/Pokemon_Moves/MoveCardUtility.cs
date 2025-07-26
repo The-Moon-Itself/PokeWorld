@@ -117,7 +117,7 @@ public static class MoveCardUtility
         }
         else
         {
-            Widgets.Label(rect4, kvp.Key.verb.defaultProjectile.projectile.GetDamageAmount(1).ToString());
+            Widgets.Label(rect4, kvp.Key.verb.defaultProjectile.projectile.GetDamageAmount(1, null).ToString());
             Widgets.Label(rect5, kvp.Key.verb.range.ToString());
         }
 
@@ -183,7 +183,7 @@ public static class MoveCardUtility
                     text += "\n\n" + "PW_PowerMeleeMove".Translate(md.tool.power);
                 else if (md.verb != null)
                     text += "\n\n" + "PW_PowerRangedMove".Translate(
-                        md.verb.defaultProjectile.projectile.GetDamageAmount(1), md.verb.range
+                        md.verb.defaultProjectile.projectile.GetDamageAmount(1, null), md.verb.range
                     );
                 if (!pawn.TryGetComp<CompPokemon>().moveTracker.HasUnlocked(md))
                     text += "\n\n" + "PW_MoveUnlockAt".Translate(kvp.Value);

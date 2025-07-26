@@ -3,6 +3,7 @@ using System.Linq;
 using System.Reflection;
 using HarmonyLib;
 using RimWorld;
+using RimWorld.Planet;
 using Verse;
 
 namespace PokeWorld;
@@ -22,9 +23,9 @@ internal class IncidentWorker_FarmAnimalsWanderIn_TryFindRandomPawnKind_Patch
         {
             __result = DefDatabase<PawnKindDef>.AllDefs
                 .Where(
-                    x => x.RaceProps.Animal && !x.race.HasComp(typeof(CompPokemon)) && x.RaceProps.wildness < 0.35f &&
+                    x => x.RaceProps.Animal && !x.race.HasComp(typeof(CompPokemon)) && x.race.GetStatValueAbstract(StatDefOf.Wildness) < 0.35f &&
                          __0.mapTemperature.SeasonAndOutdoorTemperatureAcceptableFor(x.race)
-                ).TryRandomElementByWeight(k => 0.420000017f - k.RaceProps.wildness, out __1);
+                ).TryRandomElementByWeight(k => 0.420000017f - k.race.GetStatValueAbstract(StatDefOf.Wildness), out __1);
         }
     }
 }
@@ -37,11 +38,11 @@ internal class AggressiveAnimalIncidentUtility_TryFindAggressiveAnimalKind_Patch
         return AccessTools.Method(
             typeof(AggressiveAnimalIncidentUtility),
             nameof(AggressiveAnimalIncidentUtility.TryFindAggressiveAnimalKind),
-            new[] { typeof(float), typeof(int), typeof(PawnKindDef).MakeByRefType() }
+            new[] { typeof(float), typeof(PlanetTile), typeof(PawnKindDef).MakeByRefType() }
         );
     }
 
-    public static void Postfix(float __0, int __1, out PawnKindDef __2, ref bool __result)
+    public static void Postfix(float __0, PlanetTile __1, out PawnKindDef __2, ref bool __result)
     {
         if (PokeWorldSettings.OkforPokemon())
         {
@@ -51,12 +52,22 @@ internal class AggressiveAnimalIncidentUtility_TryFindAggressiveAnimalKind_Patch
         else
         {
             var source = DefDatabase<PawnKindDef>.AllDefs.Where(
-                k => k.RaceProps.Animal && !k.race.HasComp(typeof(CompPokemon)) && k.canArriveManhunter && (__1 == -1 ||
+                k => k.RaceProps.Animal && !k.race.HasComp(typeof(CompPokemon)) && k.canArriveManhunter && (!__1.Valid ||
                     Find.World.tileTemperatures.SeasonAndOutdoorTemperatureAcceptableFor(__1, k.race))
             );
             if (source.Any())
             {
-                if (source.TryRandomElementByWeight(a => AggressiveAnimalIncidentUtility.AnimalWeight(a, __0), out __2))
+                if (ModsConfig.OdysseyActive && __1.Valid && Find.WorldGrid[__1].Mutators.Contains(TileMutatorDefOf.AnimalHabitat))
+                {
+                    TileMutatorWorker_AnimalHabitat tileMutatorWorker_AnimalHabitat = (TileMutatorWorker_AnimalHabitat)TileMutatorDefOf.AnimalHabitat.Worker;
+                    __2 = tileMutatorWorker_AnimalHabitat.GetAnimalKind(__1);
+                    if (__2.RaceProps.Animal && __2.canArriveManhunter && __2.RaceProps.CanPassFences && Rand.Chance(0.5f))
+                    {
+                        __result = true;
+                    }
+                    else __result = false;
+                }
+                else if (source.TryRandomElementByWeight(a => AggressiveAnimalIncidentUtility.AnimalWeight(a, __0), out __2))
                 {
                     __result = true;
                 }
@@ -158,7 +169,7 @@ internal class IncidentWorker_SelfTame_Candidates_Patch
     {
         __result = __0.mapPawns.AllPawnsSpawned.Where(
             x => x.RaceProps.Animal && x.Faction == null && x.TryGetComp<CompPokemon>() == null &&
-                 !x.Position.Fogged(x.Map) && !x.InMentalState && !x.Downed && x.RaceProps.wildness > 0f
+                 !x.Position.Fogged(x.Map) && !x.InMentalState && !x.Downed && x.kindDef.race.GetStatValueAbstract(StatDefOf.Wildness) > 0f
         );
     }
 }

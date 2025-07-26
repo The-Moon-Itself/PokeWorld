@@ -105,7 +105,7 @@ internal class Verb_LaunchPokeball : Verb_CastBase
                     var projectileHitFlags = ProjectileHitFlags.NonTargetWorld;
                     if (Rand.Chance(0.5f)) projectileHitFlags = ProjectileHitFlags.All;
                     if (!canHitNonTargetPawnsNow) projectileHitFlags &= ~ProjectileHitFlags.NonTargetPawns;
-                    projectile2.Launch(launcher, drawPos, c, currentTarget, projectileHitFlags, equipment);
+                    projectile2.Launch(launcher, drawPos, c, currentTarget, projectileHitFlags, false, equipment);
                     return true;
                 }
             }
@@ -116,13 +116,13 @@ internal class Verb_LaunchPokeball : Verb_CastBase
         var targetCoverDef = randomCoverToMissInto?.def;
         if (!Rand.Chance(shotReport.AimOnTargetChance_IgnoringPosture))
         {
-            resultingLine.ChangeDestToMissWild_NewTemp(shotReport.AimOnTargetChance_StandardTarget, false, caster.Map);
+            resultingLine.ChangeDestToMissWild(shotReport.AimOnTargetChance_StandardTarget, false, caster.Map);
             ThrowDebugText("ToWild" + (canHitNonTargetPawnsNow ? "\nchntp" : ""));
             ThrowDebugText("Wild\nDest", resultingLine.Dest);
             var projectileHitFlags2 = ProjectileHitFlags.NonTargetWorld;
             if (Rand.Chance(0.5f) && canHitNonTargetPawnsNow) projectileHitFlags2 |= ProjectileHitFlags.NonTargetPawns;
             projectile2.Launch(
-                launcher, drawPos, resultingLine.Dest, currentTarget, projectileHitFlags2, equipment, targetCoverDef
+                launcher, drawPos, resultingLine.Dest, currentTarget, projectileHitFlags2, false, equipment, targetCoverDef
             );
             return true;
         }
@@ -135,7 +135,7 @@ internal class Verb_LaunchPokeball : Verb_CastBase
             var projectileHitFlags3 = ProjectileHitFlags.NonTargetWorld;
             if (canHitNonTargetPawnsNow) projectileHitFlags3 |= ProjectileHitFlags.NonTargetPawns;
             projectile2.Launch(
-                launcher, drawPos, randomCoverToMissInto, currentTarget, projectileHitFlags3, equipment, targetCoverDef
+                launcher, drawPos, randomCoverToMissInto, currentTarget, projectileHitFlags3, false, equipment, targetCoverDef
             );
             return true;
         }
@@ -148,14 +148,14 @@ internal class Verb_LaunchPokeball : Verb_CastBase
         if (currentTarget.Thing != null)
         {
             projectile2.Launch(
-                launcher, drawPos, currentTarget, currentTarget, projectileHitFlags4, equipment, targetCoverDef
+                launcher, drawPos, currentTarget, currentTarget, projectileHitFlags4, false, equipment, targetCoverDef
             );
             ThrowDebugText("Hit\nDest", currentTarget.Cell);
         }
         else
         {
             projectile2.Launch(
-                launcher, drawPos, resultingLine.Dest, currentTarget, projectileHitFlags4, equipment, targetCoverDef
+                launcher, drawPos, resultingLine.Dest, currentTarget, projectileHitFlags4, false, equipment, targetCoverDef
             );
             ThrowDebugText("Hit\nDest", resultingLine.Dest);
         }

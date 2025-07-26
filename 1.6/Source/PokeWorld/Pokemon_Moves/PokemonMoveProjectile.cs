@@ -28,7 +28,7 @@ public class PokemonMoveProjectile : Projectile
             );
             hitThing.TakeDamage(dinfo).AssociateWithLog(battleLogEntry_RangedImpact);
             var pawn = hitThing as Pawn;
-            if (pawn != null && pawn.stances != null && pawn.BodySize <= def.projectile.StoppingPower + 0.001f)
+            if (pawn != null && pawn.stances != null && pawn.BodySize <= def.projectile.stoppingPower + 0.001f)
                 pawn.stances.stagger.StaggerFor(95);
             if (def.projectile.extraDamages == null) return;
             foreach (var extraDamage in def.projectile.extraDamages)

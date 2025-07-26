@@ -87,18 +87,6 @@ public class CryptosleepBall : ThingWithComps, ISuspendableThingHolder, IOpenabl
         return false;
     }
 
-    public override void TickRare()
-    {
-        base.TickRare();
-        innerContainer.ThingOwnerTickRare();
-    }
-
-    protected override void Tick()
-    {
-        base.Tick();
-        innerContainer.DoTick();
-    }
-
     public override void ExposeData()
     {
         base.ExposeData();

@@ -111,7 +111,7 @@ public class CompDittoEggLayer : ThingComp
 
 public class CompProperties_DittoEggLayer : CompProperties
 {
-    public IntRange eggCountRange = IntRange.one;
+    public IntRange eggCountRange = new IntRange(1,1);
 
     public int eggFertilizationCountMax = 1;
     public float eggLayIntervalDays = 1f;

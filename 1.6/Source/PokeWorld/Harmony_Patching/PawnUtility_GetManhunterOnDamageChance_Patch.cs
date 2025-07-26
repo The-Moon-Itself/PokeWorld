@@ -4,14 +4,14 @@ using Verse;
 
 namespace PokeWorld;
 
-[HarmonyPatch(typeof(PawnUtility), "GetManhunterOnDamageChance", typeof(Pawn), typeof(float), typeof(Thing))]
+[HarmonyPatch(typeof(PawnUtility), "GetManhunterOnDamageChance", typeof(Pawn), typeof(Thing), typeof(float))]
 internal class PawnUtility_GetManhunterOnDamageChance_Patch
 {
-    public static void Postfix(Pawn __0, float __1, Thing __2, ref float __result)
+    public static void Postfix(Pawn __0, Thing __1, float __2, ref float __result)
     {
-        if (__2 != null)
+        if (__1 != null)
         {
-            var instigator = __2 as Pawn;
+            var instigator = __1 as Pawn;
             var instigatorComp = instigator.TryGetComp<CompPokemon>();
             if (instigatorComp != null)
             {

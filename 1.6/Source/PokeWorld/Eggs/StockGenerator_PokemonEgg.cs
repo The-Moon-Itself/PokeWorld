@@ -14,7 +14,7 @@ public class StockGenerator_PokemonEgg : StockGenerator
 
     private readonly List<ThingDef> excludedThingDefs = new();
 
-    private IntRange thingDefCountRange = IntRange.one;
+    private IntRange thingDefCountRange = new IntRange(1, 1);
 
     public override IEnumerable<Thing> GenerateThings(PlanetTile forTile, Faction faction = null)
     {

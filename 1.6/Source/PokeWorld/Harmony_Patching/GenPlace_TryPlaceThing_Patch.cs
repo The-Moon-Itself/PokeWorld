@@ -7,7 +7,7 @@ namespace PokeWorld;
 
 [HarmonyPatch(
     typeof(GenPlace), nameof(GenPlace.TryPlaceThing), typeof(Thing), typeof(IntVec3), typeof(Map),
-    typeof(ThingPlaceMode), typeof(Action<Thing, int>), typeof(Predicate<IntVec3>), typeof(Rot4)
+    typeof(ThingPlaceMode), typeof(Action<Thing, int>), typeof(Predicate<IntVec3>), typeof(Rot4), typeof(int)
 )]
 internal class GenPlace_TryPlaceThing_Patch
 {

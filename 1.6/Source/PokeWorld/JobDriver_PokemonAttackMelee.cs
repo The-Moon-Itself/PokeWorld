@@ -80,7 +80,7 @@ public class JobDriver_PokemonAttackMelee : JobDriver
         if (job.attackDoorIfTargetLost)
         {
             Thing thing;
-            using (var pawnPath = Map.pathFinder.FindPath(
+            using (var pawnPath = Map.pathFinder.FindPathNow(
                        pawn.Position, TargetA.Cell, TraverseParms.For(pawn, Danger.Deadly, TraverseMode.PassDoors)
                    ))
             {

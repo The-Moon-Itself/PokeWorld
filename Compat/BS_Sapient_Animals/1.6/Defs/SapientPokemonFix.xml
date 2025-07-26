@@ -1,0 +1,10 @@
+<Defs>
+  <BigAndSmall.HumanlikeAnimalSettings>
+    <defName>HumanlikePokemonSettings</defName>
+
+    <compWhitelist>
+      <li>PokeWorld.CompPokemon</li>
+    </compWhitelist>
+    
+  </BigAndSmall.HumanlikeAnimalSettings>
+</Defs>

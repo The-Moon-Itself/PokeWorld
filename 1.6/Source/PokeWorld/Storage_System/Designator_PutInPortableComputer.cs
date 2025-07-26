@@ -22,7 +22,7 @@ internal class Designator_PutInPortableComputer : Designator
         hotKey = KeyBindingDefOf.Misc7;
     }
 
-    public override int DraggableDimensions => 2;
+    public override DrawStyleCategoryDef DrawStyleCategory => DrawStyleCategoryDefOf.FilledRectangle;
 
     protected override DesignationDef Designation => DefDatabase<DesignationDef>.GetNamed("PW_PutInPortableComputer");
 

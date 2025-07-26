@@ -79,7 +79,7 @@ internal class DamageWorker_PokemonSmash : DamageWorker_PokemonMeleeMove
                 : DamageDefOf.Blunt.bluntStunChancePerDamagePctOfCorePartToBodyCurve;
             var pawn2 = PawnGenerator.GeneratePawn(
                 new PawnGenerationRequest(
-                    d.race.AnyPawnKind, Find.FactionManager.FirstFactionOfDef(d.race.AnyPawnKind.defaultFactionType),
+                    d.race.AnyPawnKind, Find.FactionManager.FirstFactionOfDef(d.race.AnyPawnKind.defaultFactionDef),
                     PawnGenerationContext.NonPlayer, -1, true
                 )
             );
@@ -103,7 +103,7 @@ internal class DamageWorker_PokemonSmash : DamageWorker_PokemonMeleeMove
                     var pawn = PawnGenerator.GeneratePawn(
                         new PawnGenerationRequest(
                             d.race.AnyPawnKind,
-                            Find.FactionManager.FirstFactionOfDef(d.race.AnyPawnKind.defaultFactionType),
+                            Find.FactionManager.FirstFactionOfDef(d.race.AnyPawnKind.defaultFactionDef),
                             PawnGenerationContext.NonPlayer, -1, true
                         )
                     );

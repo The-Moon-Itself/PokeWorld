@@ -18,12 +18,12 @@ internal class PawnGroupKindWorker_Trader_GenerateCarriers_Patch
         if (!PokeWorldSettings.OkforPokemon() || PokeWorldSettings.allowNPCPokemonPack == false)
             kind = __1.carriers
                 .Where(
-                    x => __0.tile == -1 || (Find.WorldGrid[__0.tile].biome.IsPackAnimalAllowed(x.kind.race) &&
+                    x => __0.tile == -1 || (Find.WorldGrid[__0.tile].PrimaryBiome.IsPackAnimalAllowed(x.kind.race) &&
                                             !x.kind.race.HasComp(typeof(CompPokemon)))
                 ).RandomElementByWeight(x => x.selectionWeight).kind;
         else
             kinds = __1.carriers.Where(
-                x => __0.tile == -1 || (Find.WorldGrid[__0.tile].biome.IsPackAnimalAllowed(x.kind.race) &&
+                x => __0.tile == -1 || (Find.WorldGrid[__0.tile].PrimaryBiome.IsPackAnimalAllowed(x.kind.race) &&
                                         x.kind.race.HasComp(typeof(CompPokemon)) && PokeWorldSettings.GenerationAllowed(
                                             x.kind.race.GetCompProperties<CompProperties_Pokemon>().generation
                                         ))
