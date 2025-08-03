@@ -4622,6 +4622,13 @@
         <rarity>1</rarity>
         <canEvolve>true</canEvolve>
         <evolutionLine>12</evolutionLine>
+        <evolutions>
+          <li>
+            <pawnKind>PW_Nidorina</pawnKind>
+            <requirement>level</requirement>
+            <level>16</level>
+          </li>
+        </evolutions>
         <moves>
           <li>
             <moveDef>Struggle</moveDef>
@@ -5111,6 +5118,13 @@
         <rarity>1</rarity>
         <canEvolve>true</canEvolve>
         <evolutionLine>13</evolutionLine>
+        <evolutions>
+          <li>
+            <pawnKind>PW_Nidorino</pawnKind>
+            <requirement>level</requirement>
+            <level>16</level>
+          </li>
+        </evolutions>
         <moves>
           <li>
             <moveDef>Struggle</moveDef>
