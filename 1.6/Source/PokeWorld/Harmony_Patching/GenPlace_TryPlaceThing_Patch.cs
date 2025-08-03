@@ -21,7 +21,7 @@ internal class GenPlace_TryPlaceThing_Patch
                 DefDatabase<PawnKindDef>.GetNamed("PW_Porygon"), Faction.OfPlayer, __1, __2, null, true
             );
             Find.World.GetComponent<PokedexManager>()
-                .AddPokemonKindCaught(DefDatabase<PawnKindDef>.GetNamed("PW_Porygon"));
+                .AddPokemonKindCaught(137, DefDatabase<PawnKindDef>.GetNamed("PW_Porygon"));
             //Messages.Message("PW_CraftedPokemon".Translate(actor.LabelShortCap, revivedPokemon.KindLabel), revivedPokemon, MessageTypeDefOf.PositiveEvent);
             return false;
         }

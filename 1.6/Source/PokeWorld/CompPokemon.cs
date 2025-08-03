@@ -70,7 +70,7 @@ public class CompPokemon : ThingComp
         if (!Pokemon.Position.Fogged(Pokemon.Map))
         {
             var pokedex = Find.World.GetComponent<PokedexManager>();
-            if (!pokedex.IsPokemonSeen(Pokemon.kindDef)) pokedex.AddPokemonKindSeen(Pokemon.kindDef);
+            if (!pokedex.IsPokemonSeen(PokedexNumber)) pokedex.AddPokemonKindSeen(PokedexNumber, Pokemon.kindDef);
         }
 
         statTracker?.UpdateStats();
@@ -86,21 +86,21 @@ public class CompPokemon : ThingComp
         if (inBall && Pokemon.Spawned) inBall = false;
         if (flagIsPokedexSeen == null)
         {
-            flagIsPokedexSeen = Find.World.GetComponent<PokedexManager>().IsPokemonSeen(Pokemon.kindDef);
+            flagIsPokedexSeen = Find.World.GetComponent<PokedexManager>().IsPokemonSeen(PokedexNumber);
         }
         else if (!(bool)flagIsPokedexSeen && Pokemon.Spawned && !Pokemon.Position.Fogged(Pokemon.Map))
         {
-            Find.World.GetComponent<PokedexManager>().AddPokemonKindSeen(Pokemon.kindDef);
+            Find.World.GetComponent<PokedexManager>().AddPokemonKindSeen(PokedexNumber, Pokemon.kindDef);
             flagIsPokedexSeen = true;
         }
 
         if (flagIsPokedexCaught == null)
         {
-            flagIsPokedexCaught = Find.World.GetComponent<PokedexManager>().IsPokemonCaught(Pokemon.kindDef);
+            flagIsPokedexCaught = Find.World.GetComponent<PokedexManager>().IsPokemonCaught(PokedexNumber);
         }
         else if (!(bool)flagIsPokedexCaught && Pokemon.Faction == Faction.OfPlayer)
         {
-            Find.World.GetComponent<PokedexManager>().AddPokemonKindCaught(Pokemon.kindDef);
+            Find.World.GetComponent<PokedexManager>().AddPokemonKindCaught(PokedexNumber, Pokemon.kindDef);
             flagIsPokedexCaught = true;
         }
     }
@@ -136,7 +136,7 @@ public class CompPokemon : ThingComp
         string typeDescription = "PW_StatTypeDesc".Translate() + "\n";
         var evolutionValue = "";
         string evolutionDescription = "PW_StatEvolutionDesc".Translate() + "\n";
-        if (Find.World.GetComponent<PokedexManager>().IsPokemonCaught(parent.def.race.AnyPawnKind))
+        if (Find.World.GetComponent<PokedexManager>().IsPokemonCaught(PokedexNumber))
         {
             foreach (var eggGroupDef in EggGroups)
             {
@@ -167,7 +167,7 @@ public class CompPokemon : ThingComp
                 {
                     if (evolutionValue.Length > 0) evolutionValue += ", ";
                     string evolutionLabel;
-                    if (Find.World.GetComponent<PokedexManager>().IsPokemonCaught(evolution.pawnKind))
+                    if (Find.World.GetComponent<PokedexManager>().IsPokemonCaught(evolution.pawnKind.race.GetCompProperties<CompProperties_Pokemon>().pokedexNumber))
                         evolutionLabel = evolution.pawnKind.LabelCap;
                     else
                         evolutionLabel = "PW_StatUnknownEvolution".Translate();
@@ -241,7 +241,7 @@ public class CompPokemon : ThingComp
                     else if (evolution.requirement == EvolutionRequirement.item)
                     {
                         string itemLabel;
-                        if (Find.World.GetComponent<PokedexManager>().IsPokemonCaught(evolution.pawnKind))
+                        if (Find.World.GetComponent<PokedexManager>().IsPokemonCaught(evolution.pawnKind.race.GetCompProperties<CompProperties_Pokemon>().pokedexNumber))
                             itemLabel = evolution.item.LabelCap;
                         else
                             itemLabel = "PW_CertainItem".Translate();
@@ -362,7 +362,7 @@ public class CompPokemon : ThingComp
             Pokemon.SetFaction(Faction.OfPlayer, playerNegotiator);
             Pokemon.training.Train(DefDatabase<TrainableDef>.GetNamed("Obedience"), playerNegotiator, true);
             Pokemon.training.SetWantedRecursive(DefDatabase<TrainableDef>.GetNamed("Obedience"), true);
-            Find.World.GetComponent<PokedexManager>().AddPokemonKindCaught(Pokemon.kindDef);
+            Find.World.GetComponent<PokedexManager>().AddPokemonKindCaught(PokedexNumber, Pokemon.kindDef);
         }
         else if (action == TradeAction.PlayerSells)
         {

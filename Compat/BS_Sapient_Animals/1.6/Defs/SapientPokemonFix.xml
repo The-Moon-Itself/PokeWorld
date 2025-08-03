@@ -1,10 +1,1000 @@
 <Defs>
-  <BigAndSmall.HumanlikeAnimalSettings>
-    <defName>HumanlikePokemonSettings</defName>
+  <BigAndSmall.HumanlikeAnimalSettings MayRequire="RedMattis.BetterPrerequisites">
+    <defName>PW_PokemonSettings</defName>
 
     <compWhitelist>
-      <li>PokeWorld.CompPokemon</li>
+      <li>PokeWorld.CompProperties_Pokemon</li>
+      <li>PokeWorld.CompXpEvGiver</li>
+      <li>PokeWorld.CompProperties_HeatPusher</li>
+      <li>PokeWorld.CompProperties_Power</li>
+      <li>PokeWorld.CompProperties_Power</li>
     </compWhitelist>
+
+    <!-- Anything that can plausibly manipulate things if given specialized tools qualify.
+     E.g. Elephants have trunks. Spiders have limbs and possibly web to assist, etc. -->
+    <hasHandsWildcards>
+      <li>PW_Bulbasaur</li> 
+      <li>PW_Ivysaur</li>
+      <li>PW_Venusaur</li> <!-- Prehensile vines, giving more leniency because they're starters-->
+
+      <li>PW_Charmander</li>
+      <li>PW_Charmeleon</li>
+      <li>PW_Charizard</li>
+
+      <li>PW_Squirtle</li>
+      <li>PW_Wartortle</li>
+      <li>PW_Blastoise</li>
+
+      <li>PW_Butterfree</li>
+
+      <li>PW_Pidgey</li>
+      <li>PW_Pidgeotto</li>
+      <li>PW_Pidgeot</li> <!-- B&S Sapient Animals has set the precedent that talons are dexterous-->
+      
+      <li>PW_Ratata</li>
+      <li>PW_Raticate</li>
+
+      <li>PW_Spearow</li>
+      <li>PW_Fearow</li>
+
+      <li>PW_Pikachu</li>
+      <li>PW_Raichu</li>
+
+      <li>PW_Sandshrew</li>
+      <li>PW_Sandslash</li>
+
+      <li>PW_Nidorina</li>
+      <li>PW_Nidoqueen</li>
+      <li>PW_Nidorino</li>
+      <li>PW_Nidoking</li>
+      
+      <li>PW_Clefairy</li>
+      <li>PW_Clefable</li>
+      
+      <li>PW_Jigglypuff</li>
+      <li>PW_Wigglytuff</li>
+
+      <li>PW_Gloom</li>
+      <li>PW_Vileplume</li>
+
+      <li>PW_Venonat</li>
+      
+      <li>PW_Meowth</li>
+      
+      <li>PW_Psyduck</li>
+      <li>PW_Golduck</li>
+      
+      <li>PW_Mankey</li>
+      <li>PW_Primape</li>
+
+      <li>PW_Poliwhirl</li>
+      <li>PW_Poliwrath</li>
+      
+      <li>PW_Abra</li>
+      <li>PW_Kadabra</li>
+      <li>PW_Alakazam</li>
+      
+      <li>PW_Machop</li>
+      <li>PW_Machoke</li>
+      <li>PW_Machamp</li>
+      
+      <li>PW_Geodude</li>
+      <li>PW_Graveler</li>
+      <li>PW_Golem</li>
+      
+      <li>PW_Slowbro</li>
+      
+      <li>PW_Farfetch</li> <!-- Webbed talons, but canonical wing-hands -->
+
+      <li>PW_Grimer</li>
+      <li>PW_Muk</li>
+
+      <li>PW_Haunter</li>
+      <li>PW_Gengar</li>
+      
+      <li>PW_Drowzee</li>
+      <li>PW_Hypno</li>
+      
+      <li>PW_Cubone</li>
+      <li>PW_Marowak</li>
+      
+      <li>PW_Hitmonlee</li>
+      <li>PW_Hitmonchan</li>
+      
+      <li>PW_Lickitung</li>
+      
+      <li>PW_Rhydon</li>
+      
+      <li>PW_Chansey</li>
+      
+      <li>PW_Kangaskhan</li>
+      
+      <li>PW_MrMime</li>
+
+      <li>PW_Jynx</li>
+      <li>PW_Electabuzz</li>
+      <li>PW_Magmar</li>
+      
+      <li>PW_Pinsir</li>
+
+      <li>PW_Ditto</li> <!-- Just transform some hands -->
+      
+      <li>PW_Articuno</li> 
+      <li>PW_Zapdos</li>
+      <li>PW_Moltress</li> <!-- Talon birds-->
+      
+      <li>PW_Dragonite</li>
+      
+      <li>PW_Mewtwo</li>
+      <li>PW_Mew</li>
+      
+      <li>PW_Chikorita</li>
+      <li>PW_Bayleef</li>
+      <li>PW_Meganium</li> <!-- Prehensile vines given leniency due to being starters-->
+      
+      <li>PW_Cyndaquil</li>
+      <li>PW_Quilava</li>
+      <li>PW_Typhlosion</li>
+      
+      <li>PW_Totodile</li>
+      <li>PW_Croconaw</li>
+      <li>PW_Feraligatr</li>
+      
+      <li>PW_Sentret</li>
+      <li>PW_Furret</li>
+      
+      <li>PW_Noctowl</li>
+      
+      <li>PW_Ledyba</li>
+      <li>PW_ledian</li>
+
+      
+      <li>PW_Spinarak</li>
+      <li>PW_Ariados</li> <!-- Spiders get leyway with extra limbs and webs-->
+      
+      <li>PW_Pichu</li>
+      <li>PW_Cleffa</li>
+      <li>PW_Igglybuff</li> <!-- All the babies can work your fields-->
+
+      <li>PW_Togepi</li>
+      <li>PW_Togetic</li>
+      
+      <li>PW_Natu</li> <!-- I can just barely see it working for this one -->
+      <li>PW_Xatu</li>
+      
+      <li>PW_Flaaffy</li>
+      <li>PW_Ampharos</li>
+      
+      <li>PW_Bellossom</li>
+      
+      <li>PW_Marill</li>
+      <li>PW_Azumarill</li>
+      
+      <li>PW_Politoed</li>
+      
+      <li>PW_Hoppip</li>
+      <li>PW_Skiploom</li>
+      <li>PW_Jumpluff</li>
+      
+      <li>PW_Aipom</li>
+      
+      <li>PW_Yanma</li>
+      <li>PW_Quagsire</li>
+      
+      <li>PW_Espeon</li> <!-- I would give TK only poor manip, but I want to throw the eeveelutions a bone. -->
+      
+      <li>PW_Murkrow</li>
+      
+      <li>PW_Slowking</li>
+      
+      <li>PW_Wobbuffet</li>
+
+      <li>PW_Gligar</li>
+      
+      <li>PW_Snubbull</li>
+      <li>PW_Granbull</li>
+      
+      <li>PW_Heracross</li>
+      
+      <li>PW_Sneasel</li>
+
+      <li>PW_Teddiursa</li>
+      <li>PW_Ursaring</li>
+      
+      <li>PW_Octillery</li> <!-- Octopus tentacles-->
+      
+      <li>PW_Delibird</li> <!-- If those flippers can open a sack, they can do surgery-->
+      
+      <li>PW_Skarmory</li>
+      
+      <li>PW_Smeargle</li>
+
+      <li>PW_Tyrogue</li>
+      <li>PW_Hitmontop</li>
+      
+      <li>PW_Smoochum</li>
+      <li>PW_Elekid</li>
+      <li>PW_Magby</li>
+      
+      <li>PW_Miltank</li>
+      <li>PW_Blissey</li>
+
+      <li>PW_Suicune</li> <!-- Prehensile ribbon tails, given leniency due to being a legendary (And nepotism due to being in my top 5 favorite pokemon) -->
+      
+      <li>PW_Larvitar</li>
+      <li>PW_Tyranitar</li>
+      
+      <li>PW_Lugia</li> <!-- Wing hands!-->
+      <li>PW_HoOh</li> <!-- Talon bird-->
+      
+      <li>PW_Celebi</li>
+      
+      <li>PW_Treecko</li>
+      <li>PW_Grovyle</li>
+      <li>PW_Sceptile</li> <!-- First grass starters with hands-->
+      
+      <li>PW_Combusken</li>
+      <li>PW_Blaziken</li> <!-- Torchic is our first starter without manipulators-->
+      
+      <li>PW_Marshtomp</li>
+      <li>PW_Swampert</li>
+      
+      <li>PW_Lombre</li>
+      <li>PW_Ludicolo</li>
+      
+      <li>PW_Nuzleaf</li>
+      <li>PW_Shiftry</li>
+      
+      <li>PW_Taillow</li>
+      <li>PW_Swellow</li>
+      
+      <li>PW_Wingull</li>
+      <li>PW_Pelipper</li>
+      
+      <li>PW_Ralts</li>
+      <li>PW_Kirlia</li>
+      <li>PW_Gardevoir</li>
+      
+      <li>PW_Breloom</li>
+      
+      <li>PW_Slakoth</li>
+      <li>PW_Vigoroth</li>
+      <li>PW_Slaking</li>
+      
+      <li>PW_Ninjask</li>
+      
+      <li>PW_Whismur</li>
+      <li>PW_Loudred</li>
+      <li>PW_Exploud</li>
+      
+      <li>PW_Makuhita</li>
+      <li>PW_Hariyama</li>
+      
+      <li>PW_Sableye</li>
+      
+      <li>PW_Mawile</li>
+      
+      <li>PW_Aggron</li>
+      
+      <li>PW_Meditite</li>
+      <li>PW_Medicham</li>
+      
+      <li>PW_Plusle</li>
+      <li>PW_Minun</li>
+      
+      <li>PW_Volbeat</li>
+      <li>PW_Illumise</li>
+      
+      <li>PW_Gulpin</li>
+      <li>PW_Swalot</li>
+      
+      <li>PW_Spoink</li>
+      <li>PW_Grumpig</li>
+      
+      <li>PW_Spinda</li>
+      
+      <li>PW_Flygon</li>
+      
+      <li>PW_Swablu</li>
+      <li>PW_Altaria</li>
+      
+      <li>PW_Zangoose</li>
+      
+      <li>PW_Kecleon</li>
+      
+      <li>PW_Banette</li>
+      
+      <li>PW_Dusclops</li>
+      
+      <li>PW_Snorunt</li>
+      
+      <li>PW_Bagon</li>
+      
+      <li>PW_Metang</li>
+      <li>PW_Metagross</li>
+      
+      <li>PW_Regirock</li>
+      <li>PW_Regice</li>
+      <li>PW_Registeel</li>
+      
+      <li>PW_Latias</li>
+      <li>PW_Latios</li>
+      
+      <li>PW_Groudon</li>
+      <li>PW_Rayquaza</li>
+      
+      <li>PW_Jirachi</li>
+      <li>PW_Deoxys</li>
+
+      <!-- I can't even use the vine excuse for the turtwig line-->
+      
+      <li>PW_Chimchar</li>
+      <li>PW_Monferno</li>
+      <li>PW_Infernape</li>
+      
+      <li>PW_Piplup</li>
+      <li>PW_Prinplup</li>
+      <li>PW_Empoleon</li>
+      
+      <li>PW_Starly</li>
+      <li>PW_Staravia</li>
+      <li>PW_Staraptor</li>
+      
+      <li>PW_Bilbarel</li>
+      
+      <li>PW_Kricketot</li>
+      
+      <li>PW_Cranidos</li>
+      <li>PW_Rampardos</li>
+      
+      <li>PW_Vespiquen</li>
+      
+      <li>PW_Pachirisu</li>
+      
+      <li>PW_Buizel</li>
+      <li>PW_Floatzel</li>
+      
+      <li>PW_Cherrim</li>
+      
+      <li>PW_Ambipom</li>
+      
+      <li>PW_Buneary</li>
+      <li>PW_Lopunny</li>
+      
+      <li>PW_Honchkrow</li>
+      
+      <li>PW_Chingling</li>
+      
+      <li>PW_MimeJr</li>
+      <li>PW_Happiny</li>
+      
+      <li>PW_Chatot</li>  <!-- Get your own damn perfect apples-->
+      
+      <li>PW_Gible</li>
+      <li>PW_Gabite</li>
+      <li>PW_Garchomp</li>
+      
+      <li>PW_Munchlax</li>
+      
+      <li>PW_Riolu</li>
+      <li>PW_Lucario</li>
+
+      <li>PW_Croagunk</li>
+      <li>PW_Toxicroak</li>
+      
+      <li>PW_Snover</li>
+      <li>PW_Abomasnow</li>
+      
+      <li>PW_Weavile</li>
+      
+      <li>PW_Lickilicky</li>
+      
+      <li>PW_Rhyperior</li>
+      
+      <li>PW_Tangrowth</li>
+      
+      <li>PW_Electivire</li>
+      <li>PW_Magmortar</li>
+      
+      <li>PW_Yanmega</li>
+      
+      <li>PW_Leafeon</li> <!-- Prehensile vines? Eeveelutions need the win-->
+      
+      <li>PW_Gliscor</li>
+      
+      <li>PW_Gallade</li>
+      
+      <li>PW_Dusknoir</li>
+      
+      <li>PW_Froslass</li>
+      
+      <li>PW_Uxie</li>
+      <li>PW_Mesprit</li>
+      <li>PW_Azelf</li>
+      
+      <li>PW_Palkia</li>
+      <li>PW_Regigigas</li>
+      <li>PW_Giratina</li> <!-- Shadow hand thingies-->
+      <li>PW_Phione</li>
+      <li>PW_Manaphy</li>
+      <li>PW_Darkrai</li>
+      <li>PW_Arceus</li> <!-- If it can make all of existence, it can make components at the fabrication table.-->
+
+      <li>PW_Victini</li>
+      
+      <li>PW_Snivy</li>
+      <li>PW_Servine</li>
+      <li>PW_Serperior</li> <!-- Vines -->
+
+      <li>PW_Pignite</li>
+      <li>PW_Emboar</li>
+      
+      <li>PW_Oshawott</li>
+      <li>PW_Dewott</li>
+      
+      <li>PW_Patrat</li>
+      <li>PW_Watchog</li>
+      
+      <li>PW_Purrloin</li> <!-- Deceptively bipedal -->
+      
+      <li>PW_Pansage</li>
+      <li>PW_Simisage</li>
+      <li>PW_Pansear</li>
+      <li>PW_Simisear</li>
+      <li>PW_Panpour</li>
+      <li>PW_Simipour</li>
+      
+      <li>PW_Pidove</li>
+      <li>PW_Tranquill</li>
+      <li>PW_Unfezant</li>
+      
+      <li>PW_Drilbur</li>
+      <li>PW_Excadrill</li>
+      
+      <li>PW_Audino</li>
+      
+      <li>PW_Timburr</li>
+      <li>PW_Gurdurr</li>
+      <li>PW_Conkeldurr</li>
+      
+      <li>PW_Seismitoad</li>
+      
+      <li>PW_Throh</li>
+      <li>PW_Sawk</li>
+      
+      <li>PW_Leavanny</li>
+      
+      <li>PW_Whimsicott</li>
+      
+      <li>PW_Lilligant</li>
+      
+      <li>PW_Krokorok</li>
+      <li>PW_Krookodile</li>
+      
+      <li>PW_Darumaka</li>
+      <li>PW_Darmanitan</li>
+      
+      <li>PW_Scraggy</li>
+      <li>PW_Scrafty</li>
+      
+      <li>PW_Yamask</li>
+      <li>PW_Cofagrigus</li>
+      
+      <li>PW_Archen</li>
+      <li>PW_Archeops</li>
+      
+      <li>PW_Zoroark</li>
+      
+      <li>PW_Minccino</li>
+      <li>PW_Cinccino</li>
+      
+      <li>PW_Gothita</li>
+      <li>PW_Gothorita</li>
+      <li>PW_Gothitelle</li>
+      
+      <li>PW_Reuniclus</li>
+      
+      <li>PW_Emolga</li>
+      
+      <li>PW_Galvantula</li>
+      
+      <li>PW_Eelektross</li>
+      
+      <li>PW_Elgyem</li>
+      <li>PW_Beheeyem</li>
+      
+      <li>PW_Axew</li>
+      <li>PW_Fraxure</li>
+      <li>PW_Haxorus</li>
+      
+      <li>PW_Cubchoo</li>
+      <li>PW_Beartic</li>
+      
+      <li>PW_Mienfoo</li>
+      <li>PW_Mienshao</li>
+      
+      <li>PW_Druddigon</li>
+      
+      <li>PW_Golett</li>
+      <li>PW_Golurk</li>
+      
+      <li>PW_Bisharp</li>
+      
+      <li>PW_Rufflet</li>
+      <li>PW_Braviary</li>
+      
+      <li>PW_Vullaby</li>
+      <li>PW_Mandibuzz</li>
+      
+      <li>PW_Heatmor</li>
+      
+      <li>PW_Hydreigon</li>
+      
+      <li>PW_Tornadus</li>
+      <li>PW_Thundurus</li>
+      <li>PW_Reshiram</li>
+      <li>PW_Zekrom</li>
+      <li>PW_Landorus</li>
+      <li>PW_Kyurem</li>
+      <li>PW_Meloetta</li>
+      <li>PW_Genesect</li>
+      
+      <li>PW_Chespin</li>
+      <li>PW_Quilladin</li>
+      <li>PW_Chesnaught</li>
+      
+      <li>PW_Braixen</li>
+      <li>PW_Delphox</li>
+      
+      <li>PW_Froakie</li>
+      <li>PW_Frogadier</li>
+      <li>PW_Greninja</li>
+      
+      <li>PW_Bunnelby</li>
+      <li>PW_Diggersby</li>
+      
+      <li>PW_Fletchling</li>
+      <li>PW_Fletchinder</li>
+      <li>PW_Talonflame</li>
+      
+      <li>PW_Floette</li>
+      <li>PW_Florges</li>
+      
+      <li>PW_Pancham</li>
+      <li>PW_Pangoro</li>
+
+      <li>PW_Espurr</li>
+      <li>PW_Meowstic</li>
+      
+      <li>PW_Aegislash</li>
+      
+      <li>PW_Aromatisse</li>
+      
+      <li>PW_Slurpuff</li>
+      
+      <li>PW_Malamar</li>
+      
+      <li>PW_Binacle</li>
+      <li>PW_Barbaracle</li>
+      
+      <li>PW_Heliolisk</li>
+      
+      <li>PW_Tyrunt</li>
+      <li>PW_Tyranrum</li>
+      
+      <li>PW_Sylveon</li> <!-- Prehensile ribbons -->
+      
+      <li>PW_Hawlucha</li>
+      
+      <li>PW_Dedenne</li>
+      
+      <li>PW_Sliggoo</li>
+      <li>PW_Goodra</li>
+      
+      <li>PW_Trevenant</li>
+      
+      <li>PW_Gourgeist</li>
+      
+      <li>PW_Noibat</li>
+      <li>PW_Noivern</li>
+      
+      <li>PW_Yveltal</li>
+      <li>PW_Diancie</li>
+      <li>PW_Hoopa</li>
+      
+      <li>PW_Dartrix</li>
+      <li>PW_Decidueye</li>
+      
+      <li>PW_Incineroar</li>
+      
+      <li>PW_Brionne</li>
+      <li>PW_Primarina</li>
+      
+      <li>PW_Pikipek</li>
+      <li>PW_Trumbeak</li>
+      <li>PW_Toucannon</li>
+      
+      <li>PW_Gumshoos</li>
+      
+      <li>PW_Oricorio</li>
+      
+      <li>PW_Ribombee</li>
+      
+      <li>PW_Lycanroc</li> <!-- Dusk and Midday get to rid along with Midnight-->
+      
+      <li>PW_Shiinotic</li>
+      
+      <li>PW_Salazzle</li>
+      
+      <li>PW_Bewear</li>
+      
+      <li>PW_Steenee</li>
+      <li>PW_Tsareena</li>
+      
+      <li>PW_Oranguru</li>
+      <li>PW_Passimian</li>
+      
+      <li>PW_Golisopod</li>
+      
+      <li>PW_Komala</li>
+      <li>PW_Turtonator</li>
+      
+      <li>PW_Togedemaru</li>
+      
+      <li>PW_Mimikyu</li>
+      
+      <li>PW_HakamoO</li>
+      <li>PW_KommoO</li>
+      
+      <li>PW_TapuKoko</li>
+      <li>PW_TapuLele</li>
+      <li>PW_TapuBulu</li>
+      <li>PW_TapuFini</li>
+      
+      <li>PW_Buzzwole</li>
+      <li>PW_Pheromosa</li>
+      <li>PW_Guzzlord</li>
+      <li>PW_Necrozma</li>
+      
+      <li>PW_Magearna</li>
+      <li>PW_Marshadow</li>
+      
+      <li>PW_Poipole</li>
+      <li>PW_Naganadel</li>
+      
+      <li>PW_Blacephalon</li>
+      <li>PW_Zeraora</li>
+      
+      <li>PW_Grookey</li>
+      <li>PW_Thwackey</li>
+      <li>PW_Rillaboom</li>
+      
+      <li>PW_Scorbunny</li>
+      <li>PW_Raboot</li>
+      <li>PW_Cinderace</li>
+      
+      <li>PW_Sobble</li>
+      <li>PW_Drizzile</li>
+      <li>PW_Inteleon</li>
+      
+      <li>PW_Skwovet</li>
+      <li>PW_Greedent</li>
+      
+      <li>PW_Rookidee</li>
+      <li>PW_Corvisquire</li>
+      <li>PW_Corviknight</li>
+      
+      <li>PW_Orbeetle</li>
+      
+      <li>PW_Coalossal</li>
+      
+      <li>PW_Toxtricity</li>
+      
+      <li>PW_Clobbopus</li>
+      <li>PW_Grapploct</li>
+      
+      <li>PW_Hattrem</li>
+      <li>PW_Hatterene</li>
+      
+      <li>PW_Impidimp</li>
+      <li>PW_Morgrem</li>
+      <li>PW_Grimmsnarl</li>
+      
+      <li>PW_Obstagoon</li>
+      
+      <li>PW_Perrserker</li>
+      
+      <li>PW_Sirfetchd</li>
+      
+      <li>PW_MrRime</li>
+      
+      <li>PW_Runerigus</li>
+      
+      <li>PW_Alcremie</li>
+      
+      <li>PW_Indeedee</li>
+      
+      <li>PW_Morpeko</li>
+      
+      <li>PW_Dracozolt</li>
+      <li>PW_Arctozolt</li>
+      
+      <li>PW_Duraludon</li>
+      
+      <li>PW_Dreepy</li>
+      <li>PW_Drakloak</li>
+      <li>PW_Dragapult</li>
+      
+      <li>PW_Eternatus</li>
+      <li>PW_Kubfu</li>
+      <li>PW_Urshifu</li>
+      <li>PW_Zarude</li>
+      <li>PW_Calyrex</li>
+    </hasHandsWildcards>
+
+    <!-- Generally the category for creatures that can just barely hold something without using their mouth -->
+    <hasPoorHandsWildcards>
+      <li>PW_Beedrill</li> <!-- Beedrill's drills aren't dexterous -->
+      
+      <li>PW_Ekans</li>
+      <li>PW_Arbok</li> <!-- Coiling snakes -->
+
+      <li>PW_Paras</li>
+      <li>PW_Parasect</li> <!-- Claws -->
+
+      <li>PW_Bellsprout</li>
+      <li>PW_Weepinbell</li>
+      <li>PW_Victreebel</li> <!-- Also has prehensile vines like the bulbasaur line, but I don't think they're as dexterous-->
+      
+      <li>PW_Tentacool</li>
+      <li>PW_Tentacruel</li> <!-- Tentacles, but not dexterous like an octopus'-->
+
+      <li>PW_Magnemite</li>
+      <li>PW_Magneton</li> <!-- Maybe you can give them magnetic tools?-->
+      
+      <li>PW_Seel</li>
+      <li>PW_Dewgong</li>
+      
+      <li>PW_Ghastly</li> <!-- Telekinesis-->
+
+      <!-- No Onix, it's too bulky to coil-->
+      
+      <li>PW_Krabby</li>
+      <li>PW_Kingler</li>
+      
+      <li>PW_Scyther</li> <!-- It can hold things, if it's VERY careful-->
+      
+      <li>PW_Lapras</li> <!-- I can see it with those flippers -->
+
+      <li>PW_Vaporeon</li>
+      <li>PW_Jolteon</li>
+      <li>PW_Flareon</li> <!-- I'm giving the eeveelutions manipulators because they're popular. that's it (Eevee itself doesn't get any though.)-->
+      
+      <li>PW_Omanyte</li>
+      <li>PW_Omastar</li> <!-- Tentacles -->
+      
+      <li>PW_Kabutops</li> <!-- Scythe hands -->
+      
+      <li>PW_Aerodactyl</li> <!-- B&S Sapient Animals has set the precedent that wyvern wings are cumbersome. -->
+
+      <li>PW_Dratini</li>
+      <li>PW_Dragonair</li> <!-- Coiling snakes-->
+      
+      <li>PW_Hoothoot</li> <!-- I can't justify giving this bird full manipulation based on its talons -->
+      
+      <li>PW_Sudowoodo</li> <!-- Those branch arms don't seem dexterous-->
+      
+      <li>PW_Sunflora</li>
+      
+      <li>PW_Umbreon</li>
+
+      <li>PW_Scizor</li>
+      
+      <li>PW_Raikou</li>
+      <li>PW_Entei</li> <!-- Given leniency due to being legends -->
+      
+      <li>PW_Zigzagoon</li>
+      <li>PW_Linoone</li> <!-- Maybe -->
+      
+      <li>PW_Nincada</li>
+      <li>PW_Shedinja</li>
+      
+      <li>PW_Nosepass</li> <!-- Rigid rock hands -->
+      
+      <li>PW_Roselia</li> <!-- Rose hands aren't very dexterious -->
+      
+      <li>PW_Wailmer</li>
+      <li>PW_Wailord</li> <!-- Maybe with those fins?-->
+      
+      <li>PW_Vibrava</li> <!-- flimsy legs while flying might hold something-->
+      
+      <li>PW_Cacnea</li>
+      <li>PW_Cacturne</li> <!-- I've been lenient on blob hands for a while, but I don't think those are hands, just stumps.-->
+      
+      <li>PW_Seviper</li> <!-- Coiling snake-->
+      
+      <li>PW_Whiscash</li>
+      
+      <li>PW_Corphish</li>
+      <li>PW_Crawdaunt</li>
+      
+      <li>PW_Baltoy</li>
+      
+      <li>PW_Lileep</li>
+      <li>PW_Cradily</li> <!-- Maybe with whatever it has around its head? -->
+      
+      <li>PW_Anorith</li>
+      <li>PW_Armaldo</li> <!-- Shrimp claws -->
+      
+      <li>PW_Milotic</li> <!-- Coiling snake-->
+      
+      <li>PW_Duskull</li>
+      
+      <li>PW_Wynaut</li>  <!-- Maybe those ears? -->
+      
+      <li>PW_Spheal</li>
+      <li>PW_Sealeo</li>
+      <li>PW_Walrein</li>
+      
+      <li>PW_Kyogre</li> <!-- Given leyway due to being a legendary-->
+      
+      <li>PW_Kricketune</li> <!-- Scythe hands -->
+      
+      <li>PW_Roserade</li> <!-- Rose hands -->
+      
+      <li>PW_Drifloon</li>
+      <li>PW_Drifblim</li> <!-- tendrils -->
+      
+      <li>PW_Mismagius</li>
+      
+      <li>PW_Bronzong</li>
+      
+      <li>PW_Skorupi</li>
+      <li>PW_Drapion</li>
+      
+      <li>PW_Carnivine</li>
+      
+      <li>PW_Magnezone</li>
+      
+      <li>PW_Togekiss</li> <!-- Those don't look like talons -->
+      
+      <li>PW_Glaceon</li>
+
+      <li>PW_Rotom</li> <!-- Who needs tools when you can become the tool!-->
+      
+      <li>PW_Dialga</li>
+      <li>PW_Heatran</li>
+      <li>PW_Cresselia</li>
+      <li>PW_Shaymin</li> <!-- Given leyway due to being legendaries-->
+      
+      <li>PW_Samurott</li> <!-- It probably can use its forelimbs or something.-->
+      
+      <li>PW_Musharna</li> <!-- Granting this one telekinesis and not Munna because I'm inconsistent-->
+      
+      <li>PW_Swadloon</li>
+      
+      <li>PW_Scolipede</li> <!-- Has little claws on its neck-->
+      
+      <li>PW_Cottonee</li> <!-- The leaves -->
+      
+      <li>PW_Maractus</li>
+      
+      <li>PW_Dwebble</li>
+      <li>PW_Crustle</li>
+      
+      <li>PW_Sigilyph</li> <!-- Psychic BS-->
+      
+      <li>PW_Tirtouga</li>
+      
+      <li>PW_Trubbish</li>
+      <li>PW_Garbodor</li> <!-- Those hands don't look very solid -->
+      
+      <li>PW_Zorua</li> <!-- Illusions or something-->
+
+      <li>PW_Ducklett</li>
+      <li>PW_Swanna</li> <!-- I can't justify wing arms with these guys like Far Fetch'd-->
+      
+      <li>PW_Karrablast</li>
+      <li>PW_Escavalier</li>
+      
+      <li>PW_Foongus</li>
+      <li>PW_Amoonguss</li>
+      
+      <li>PW_Frillish</li>
+      <li>PW_Jellicent</li>
+      
+      <li>PW_Litwick</li>
+      <li>PW_Lampent</li>
+      <li>PW_Chandelure</li>
+      
+      <li>PW_Stunfisk</li>
+      
+      <li>PW_Pawniard</li>
+      
+      <li>PW_Durant</li>
+      
+      <li>PW_Cobalion</li>
+      <li>PW_Terrakion</li>
+      <li>PW_Virizion</li>
+      <li>PW_Keldeo</li> <!-- Legendary leniency-->
+      
+      <li>PW_Flabebe</li>
+      
+      <li>PW_Honedge</li>
+      <li>PW_Doublade</li>
+      
+      <li>PW_Spritzee</li>
+      
+      <li>PW_Inkay</li>
+      
+      <li>PW_Skrelp</li>
+      <li>PW_Dragalge</li>
+      
+      <li>PW_Clauncher</li>
+      <li>PW_Clawitzer</li>
+      
+      <li>PW_Phantump</li>
+      
+      <li>PW_Xerneas</li>
+      <li>PW_Zygarde</li>
+      <li>PW_Volcanion</li> <!-- Legendary leniency-->
+      
+      <li>PW_Rowlet</li>
+      
+      <li>PW_Popplio</li>
+      
+      <li>PW_Vikavolt</li>
+      
+      <li>PW_Crabrawler</li>
+      <li>PW_Crabominable</li>
+      
+      <li>PW_Toxapex</li>
+      
+      <li>PW_Araquanid</li>
+      
+      <li>PW_Fomantis</li>
+      <li>PW_Lurantis</li>
+      
+      <li>PW_Silvally</li> <!-- Those claws look a little more dexterous than Null-->
+      
+      <li>PW_Drampa</li>
+
+      
+      <li>PW_Solgaleo</li>
+      <li>PW_Lunala</li> <!-- Cosmog and Cosmoem don't get legendary leniency -->
+      
+      <li>PW_Nihilego</li>
+      <li>PW_Xurkitree</li>
+      <li>PW_Kartana</li>
+      
+      <li>PW_Stakataka</li>
+      <li>PW_Meltan</li>
+      <li>PW_Melmetal</li>
+      
+      <li>PW_Nickit</li>
+      <li>PW_Thievul</li>
+      
+      <li>PW_Flapple</li>
+      
+      <li>PW_Silicobra</li>
+      <li>PW_Sandaconda</li> <!-- Coiling snakes-->
+      
+      <li>PW_Polteageist</li> <!-- Telekinetic ghost-->
+      
+      <li>PW_Falinks</li> <!-- Teamwork! -->
+      <li>PW_Stonjourner</li>
+      
+      <li>PW_Eiscue</li>
+      
+      <li>PW_Cufant</li>
+      <li>PW_Copperajah</li>
+      
+      <li>PW_Zacian</li>
+      <li>PW_Zamazenta</li>
+      <li>PW_Regieleki</li>
+      <li>PW_Regidrago</li> <!-- Legendary Leniency -->
+      <!-- I'm not giving the horses manipulators-->
+    </hasPoorHandsWildcards>
     
   </BigAndSmall.HumanlikeAnimalSettings>
 </Defs>

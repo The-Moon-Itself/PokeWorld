@@ -8,16 +8,18 @@ internal class PawnColumnWorker_Caught : PawnColumnWorker_Icon
 {
     protected override Texture2D GetIconFor(Pawn pawn)
     {
-        if (pawn.TryGetComp<CompPokemon>() != null &&
-            Find.World.GetComponent<PokedexManager>().IsPokemonCaught(pawn.kindDef))
+        var comp = pawn.TryGetComp<CompPokemon>();
+        if (comp != null &&
+            Find.World.GetComponent<PokedexManager>().IsPokemonCaught(comp.PokedexNumber))
             return ContentFinder<Texture2D>.Get("Things/Item/Utility/Balls/PokeBall");
         return null;
     }
 
     protected override string GetIconTip(Pawn pawn)
     {
-        if (pawn.TryGetComp<CompPokemon>() != null &&
-            Find.World.GetComponent<PokedexManager>().IsPokemonCaught(pawn.kindDef))
+        var comp = pawn.TryGetComp<CompPokemon>();
+        if (comp != null &&
+            Find.World.GetComponent<PokedexManager>().IsPokemonCaught(comp.PokedexNumber))
             return "PW_TipAlreadyCaught".Translate();
         return null;
     }
@@ -32,7 +34,7 @@ internal class PawnColumnWorker_Caught : PawnColumnWorker_Icon
         var comp = pawn.TryGetComp<CompPokemon>();
         if (comp != null)
         {
-            if (Find.World.GetComponent<PokedexManager>().IsPokemonCaught(pawn.kindDef))
+            if (Find.World.GetComponent<PokedexManager>().IsPokemonCaught(comp.PokedexNumber))
                 return 1;
             return 0;
         }

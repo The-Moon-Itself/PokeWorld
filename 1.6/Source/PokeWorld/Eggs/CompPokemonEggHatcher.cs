@@ -97,8 +97,8 @@ public class CompPokemonEggHatcher : CompHatcher
                             (hatcheeParent == null || hatcheeParent.gender != otherParent.gender) &&
                             pawn.RaceProps.IsFlesh)
                             pawn.relations.AddDirectRelation(PawnRelationDefOf.Parent, otherParent);
-                        if (pawn.Faction == Faction.OfPlayer)
-                            Find.World.GetComponent<PokedexManager>().AddPokemonKindCaught(pawn.kindDef);
+                        if (pawn.Faction == Faction.OfPlayer && comp != null)
+                            Find.World.GetComponent<PokedexManager>().AddPokemonKindCaught(comp.PokedexNumber, pawn.kindDef);
                     }
 
                     if (parent.Spawned)

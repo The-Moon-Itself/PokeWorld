@@ -81,7 +81,7 @@ internal class JobDriver_CraftPokemon : JobDriver
         foreach (var item in CollectIngredientsToils(TargetIndex.B, TargetIndex.A, TargetIndex.C)) yield return item;
         yield return gotoBillGiver;
         yield return Toils_RecipeCraftPokemon.MakeUnfinishedThingIfNeeded();
-        yield return Toils_RecipeCraftPokemon.DoRecipeWork().FailOnDespawnedNullOrForbiddenPlacedThings()
+        yield return Toils_RecipeCraftPokemon.DoRecipeWork().FailOnDespawnedNullOrForbiddenPlacedThings(TargetIndex.A)
             .FailOnCannotTouch(TargetIndex.A, PathEndMode.InteractionCell);
         yield return Toils_RecipeCraftPokemon.FinishRecipeAndSpawnPokemon();
         if (job.RecipeDef.products.NullOrEmpty() && job.RecipeDef.specialProducts.NullOrEmpty()) yield break;

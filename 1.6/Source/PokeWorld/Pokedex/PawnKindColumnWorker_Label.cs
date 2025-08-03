@@ -17,7 +17,7 @@ public class PawnKindColumnWorker_Label : PawnKindColumnWorker
         var rect2 = new Rect(rect.x, rect.y, rect.width, Mathf.Min(rect.height, 30f));
         if (Mouse.IsOver(rect2)) GUI.DrawTexture(rect2, TexUI.HighlightTex);
         string str;
-        if (Find.World.GetComponent<PokedexManager>().IsPokemonSeen(pawnKind))
+        if (Find.World.GetComponent<PokedexManager>().IsPokemonSeen(pawnKind.race.GetCompProperties<CompProperties_Pokemon>().pokedexNumber))
             str = pawnKind.label;
         else
             str = "PW_PokedexPokemonUnseenLabel".Translate();

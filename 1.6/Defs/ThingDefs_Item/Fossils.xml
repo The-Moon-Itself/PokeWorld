@@ -153,7 +153,7 @@
     <label>Sail Fossil</label>
     <description>A fossil from a prehistoric Pokémon that once lived on land. It looks like the impression from a skin sail.</description>
     <graphicData>
-      <texPath>Things/Item/Fossils/Plume_Fossil</texPath>
+      <texPath>Things/Item/Fossils/Sail_Fossil</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
   </ThingDef>

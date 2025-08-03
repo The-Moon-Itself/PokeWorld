@@ -270,11 +270,12 @@ public class LevelTracker : IExposable
             postEvoPokemon.health.Reset();
             GenSpawn.Spawn(postEvoPokemon, preEvoPokemon.Position, preEvoPokemon.Map);
             if (faction == Faction.OfPlayer)
-                Find.World.GetComponent<PokedexManager>().AddPokemonKindCaught(postEvoPokemon.kindDef);
+                Find.World.GetComponent<PokedexManager>().AddPokemonKindCaught(postEvoPokemon.GetComp<CompPokemon>().PokedexNumber, postEvoPokemon.kindDef);
         }
 
         preEvoPokemon.inventory?.DropAllNearPawn(preEvoPokemon.Position);
-        preEvoPokemon.carryTracker?.TryDropCarriedThing(preEvoPokemon.Position, ThingPlaceMode.Near, out _);
+        if (preEvoPokemon.carryTracker?.CarriedThing != null)
+            preEvoPokemon.carryTracker?.TryDropCarriedThing(preEvoPokemon.Position, ThingPlaceMode.Near, out _);
         foreach (var hediff in preEvoPokemon.health.hediffSet?.hediffs ?? [])
         {
             if (hediff.def is not { countsAsAddedPartOrImplant: true }) continue;

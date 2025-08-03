@@ -22,7 +22,7 @@ public class QuestConditionDef : Def
             if (requiredSeenMinCount == -1) requiredSeenMinCount = requiredKindSeen.Count();
             var count = 0;
             foreach (var kindDef in requiredKindSeen)
-                if (pokedex.IsPokemonSeen(kindDef))
+                if (pokedex.IsPokemonSeen(kindDef.race.GetCompProperties<CompProperties_Pokemon>().pokedexNumber))
                     count += 1;
             if (count < requiredSeenMinCount) return false;
         }
@@ -32,7 +32,7 @@ public class QuestConditionDef : Def
             if (requiredCaughtMinCount == -1) requiredCaughtMinCount = requiredKindCaught.Count();
             var count = 0;
             foreach (var kindDef in requiredKindCaught)
-                if (pokedex.IsPokemonCaught(kindDef))
+                if (pokedex.IsPokemonCaught(kindDef.race.GetCompProperties<CompProperties_Pokemon>().pokedexNumber))
                     count += 1;
             if (count < requiredCaughtMinCount) return false;
         }

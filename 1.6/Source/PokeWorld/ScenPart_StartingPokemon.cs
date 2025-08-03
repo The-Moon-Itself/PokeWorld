@@ -138,7 +138,8 @@ public class ScenPart_StartingPokemon : ScenPart
         {
             var kindDef = animalKind ?? RandomPets().RandomElementByWeight(td => td.RaceProps.petness);
             var animal = PawnGenerator.GeneratePawn(kindDef, Faction.OfPlayer);
-            Find.World.GetComponent<PokedexManager>().AddPokemonKindCaught(animal.kindDef);
+            var compPokemon = animal.TryGetComp<CompPokemon>();
+            if (compPokemon != null) Find.World.GetComponent<PokedexManager>().AddPokemonKindCaught(compPokemon.PokedexNumber, animal.kindDef);
             if (animal.Name == null || animal.Name.Numerical)
                 animal.Name = PawnBioAndNameGenerator.GeneratePawnName(animal);
             if (Rand.Value < bondToRandomPlayerPawnChance &&

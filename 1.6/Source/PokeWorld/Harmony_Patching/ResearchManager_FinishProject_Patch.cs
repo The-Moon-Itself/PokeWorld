@@ -25,7 +25,7 @@ internal class ResearchManager_FinishProject_Patch
                             DefDatabase<PawnKindDef>.GetNamed("PW_Porygon"), Faction.OfPlayer, pos, map, pawn, true
                         );
                         Find.World.GetComponent<PokedexManager>()
-                            .AddPokemonKindCaught(DefDatabase<PawnKindDef>.GetNamed("PW_Porygon"));
+                            .AddPokemonKindCaught(137, DefDatabase<PawnKindDef>.GetNamed("PW_Porygon"));
                         break;
 
                     case "PW_PlanetaryDevelopment":

@@ -39,7 +39,7 @@ public class MoveTracker : IExposable
 
     public IEnumerable<Gizmo> GetGizmos()
     {
-        if (PokemonMasterUtility.IsPokemonMasterDrafted(pokemonHolder))
+        if (PokemonMasterUtility.IsPokemonDrafted(pokemonHolder))
             foreach (var attackGizmo in PokemonAttackGizmoUtility.GetAttackGizmos(pokemonHolder))
                 yield return attackGizmo;
     }

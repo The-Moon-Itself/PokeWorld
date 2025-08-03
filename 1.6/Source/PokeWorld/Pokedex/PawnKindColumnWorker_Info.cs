@@ -7,7 +7,7 @@ public class PawnKindColumnWorker_Info : PawnKindColumnWorker
 {
     public override void DoCell(Rect rect, PawnKindDef kindDef, PawnKindTable table)
     {
-        if (Find.World.GetComponent<PokedexManager>().IsPokemonCaught(kindDef))
+        if (kindDef.race.HasComp(typeof(CompPokemon)) && Find.World.GetComponent<PokedexManager>().IsPokemonCaught(kindDef.race.GetCompProperties<CompProperties_Pokemon>().pokedexNumber))
             Widgets.InfoCardButton(rect.center.x - 12f, rect.center.y - 12f, kindDef.race);
     }
 

@@ -195,14 +195,12 @@ public static class Toils_RecipeCraftPokemon
             message = "PW_UnleashedPokemon";
             isFossil = false;
         }
-
+        var pawnKind = DefDatabase<PawnKindDef>.GetNamed(curJob.RecipeDef.products[0].thingDef.defName);
         var revivedPokemon = PokemonGeneratorUtility.GenerateAndSpawnNewPokemon(
-            DefDatabase<PawnKindDef>.GetNamed(curJob.RecipeDef.products[0].thingDef.defName), Faction.OfPlayer,
+            pawnKind, Faction.OfPlayer,
             actor.Position, actor.Map, actor, true, isFossil
         );
-        Find.World.GetComponent<PokedexManager>().AddPokemonKindCaught(
-            DefDatabase<PawnKindDef>.GetNamed(curJob.RecipeDef.products[0].thingDef.defName)
-        );
+        Find.World.GetComponent<PokedexManager>().AddPokemonKindCaught(pawnKind.race.GetCompProperties<CompProperties_Pokemon>().pokedexNumber, pawnKind);
         Messages.Message(
             message.Translate(actor.LabelShortCap, revivedPokemon.KindLabel), revivedPokemon,
             MessageTypeDefOf.PositiveEvent

@@ -11,7 +11,7 @@ public class PawnKindColumnWorker_Type : PawnKindColumnWorker_Icon
 
     protected override Texture2D GetIconFor(PawnKindDef pawnKind)
     {
-        if (Find.World.GetComponent<PokedexManager>().IsPokemonCaught(pawnKind))
+        if (pawnKind.race.HasComp(typeof(CompPokemon)) && Find.World.GetComponent<PokedexManager>().IsPokemonCaught(pawnKind.race.GetCompProperties<CompProperties_Pokemon>().pokedexNumber))
         {
             Texture2D Icon = null;
             var types = pawnKind.race.GetCompProperties<CompProperties_Pokemon>().types;
@@ -29,7 +29,7 @@ public class PawnKindColumnWorker_Type : PawnKindColumnWorker_Icon
 
     protected override string GetIconTip(PawnKindDef pawnKind)
     {
-        if (Find.World.GetComponent<PokedexManager>().IsPokemonCaught(pawnKind))
+        if (pawnKind.race.HasComp(typeof(CompPokemon)) && Find.World.GetComponent<PokedexManager>().IsPokemonCaught(pawnKind.race.GetCompProperties<CompProperties_Pokemon>().pokedexNumber))
         {
             if (def == DefDatabase<PawnKindColumnDef>.GetNamed("Type1"))
                 return pawnKind.race.GetCompProperties<CompProperties_Pokemon>().types[0].label;

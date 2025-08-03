@@ -23,6 +23,13 @@ public static class PokemonMasterUtility
         if (radius > 0f && radius < GenRadial.MaxRadialPatternRadius)
             GenDraw.DrawRadiusRing(master.Position, radius, Color.blue);
     }
+    
+    //Similar to IsPokemonMasterDrafted, but also returns true if the pokemon itself is directly drafted under player control.
+    public static bool IsPokemonDrafted(Pawn pokemon)
+    {
+        if (pokemon.Drafted) return pokemon.Faction is { IsPlayer: true };
+        return IsPokemonMasterDrafted(pokemon);
+    }
 
     public static bool IsPokemonMasterDrafted(Pawn pokemon)
     {
@@ -34,7 +41,7 @@ public static class PokemonMasterUtility
 
     public static bool IsPokemonInMasterRange(Pawn pokemon)
     {
-        if (!IsPokemonMasterDrafted(pokemon)) return false;
+        if (!IsPokemonMasterDrafted(pokemon)) return IsPokemonDrafted(pokemon);
         var distance = pokemon.Position.DistanceTo(pokemon.playerSettings.Master.Position);
         return distance <= GetMasterObedienceRadius(pokemon);
     }

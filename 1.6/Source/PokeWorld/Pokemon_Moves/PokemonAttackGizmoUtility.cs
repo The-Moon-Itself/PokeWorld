@@ -75,7 +75,7 @@ public static class PokemonAttackGizmoUtility
                          {
                              var pawn2 = x as Pawn;
                              return pawn2 != null && pawn2.TryGetComp<CompPokemon>() != null &&
-                                    PokemonMasterUtility.IsPokemonMasterDrafted(pawn2);
+                                    PokemonMasterUtility.IsPokemonDrafted(pawn2);
                          }
                      ).Cast<Pawn>())
             {
@@ -110,17 +110,17 @@ public static class PokemonAttackGizmoUtility
         {
             command_Target.Disable(failStr.CapitalizeFirst() + ".");
         }
-        else if (pawn.playerSettings.Master == null || pawn.playerSettings.Master.Map != pawn.Map)
+        else if (!pawn.Drafted && (pawn.playerSettings.Master == null || pawn.playerSettings.Master.Map != pawn.Map))
         {
             failStr = "PW_WarningNoMaster".Translate();
             command_Target.Disable(failStr.CapitalizeFirst() + ".");
         }
-        else if (pawn.playerSettings.Master.Drafted == false)
+        else if (!pawn.Drafted && pawn.playerSettings.Master.Drafted == false)
         {
             failStr = "PW_WarningMasterNotDrafted".Translate();
             command_Target.Disable(failStr.CapitalizeFirst() + ".");
         }
-        else if (pawn.Position.DistanceTo(pawn.playerSettings.Master.Position) >
+        else if (!pawn.Drafted && pawn.Position.DistanceTo(pawn.playerSettings.Master.Position) >
                  PokemonMasterUtility.GetMasterObedienceRadius(pawn))
         {
             failStr = "PW_WarningMasterTooFar".Translate();
@@ -134,7 +134,7 @@ public static class PokemonAttackGizmoUtility
                          {
                              var pawn2 = x as Pawn;
                              return pawn2 != null && pawn2.TryGetComp<CompPokemon>() != null &&
-                                    PokemonMasterUtility.IsPokemonMasterDrafted(pawn2);
+                                    PokemonMasterUtility.IsPokemonDrafted(pawn2);
                          }
                      ).Cast<Pawn>())
             {
@@ -159,21 +159,24 @@ public static class PokemonAttackGizmoUtility
         command_PokemonVerbTarget.tutorTag = "VerbTarget";
         command_PokemonVerbTarget.verb = GetLongestRangeVerb(pawn);
         string failStr;
-        if (pawn.playerSettings.Master == null || pawn.playerSettings.Master.Map != pawn.Map)
+        if (!pawn.Drafted)
         {
-            failStr = "PW_WarningNoMaster".Translate();
-            command_PokemonVerbTarget.Disable(failStr.CapitalizeFirst() + ".");
-        }
-        else if (pawn.playerSettings.Master.Drafted == false)
-        {
-            failStr = "PW_WarningMasterNotDrafted".Translate();
-            command_PokemonVerbTarget.Disable(failStr.CapitalizeFirst() + ".");
-        }
-        else if (pawn.Position.DistanceTo(pawn.playerSettings.Master.Position) >
-                 PokemonMasterUtility.GetMasterObedienceRadius(pawn))
-        {
-            failStr = "PW_WarningMasterTooFar".Translate();
-            command_PokemonVerbTarget.Disable(failStr.CapitalizeFirst() + ".");
+            if (pawn.playerSettings.Master == null || pawn.playerSettings.Master.Map != pawn.Map)
+            {
+                failStr = "PW_WarningNoMaster".Translate();
+                command_PokemonVerbTarget.Disable(failStr.CapitalizeFirst() + ".");
+            }
+            else if (pawn.playerSettings.Master.Drafted == false)
+            {
+                failStr = "PW_WarningMasterNotDrafted".Translate();
+                command_PokemonVerbTarget.Disable(failStr.CapitalizeFirst() + ".");
+            }
+            else if (pawn.Position.DistanceTo(pawn.playerSettings.Master.Position) >
+                        PokemonMasterUtility.GetMasterObedienceRadius(pawn))
+            {
+                failStr = "PW_WarningMasterTooFar".Translate();
+                command_PokemonVerbTarget.Disable(failStr.CapitalizeFirst() + ".");
+            }
         }
 
         command_PokemonVerbTarget.action = delegate(LocalTargetInfo target)
@@ -183,7 +186,7 @@ public static class PokemonAttackGizmoUtility
                          {
                              var pawn2 = x as Pawn;
                              return pawn2 != null && pawn2.TryGetComp<CompPokemon>() != null &&
-                                    PokemonMasterUtility.IsPokemonMasterDrafted(pawn2);
+                                    PokemonMasterUtility.IsPokemonDrafted(pawn2);
                          }
                      ).Cast<Pawn>())
             {
@@ -205,7 +208,7 @@ public static class PokemonAttackGizmoUtility
         {
             var pawn = selectedObjectsListForReading[i] as Pawn;
             if (pawn != null && pawn.TryGetComp<CompPokemon>() != null &&
-                PokemonMasterUtility.IsPokemonMasterDrafted(pawn) && CanUseAnyRangedVerb(pawn)) return true;
+                PokemonMasterUtility.IsPokemonDrafted(pawn) && CanUseAnyRangedVerb(pawn)) return true;
         }
 
         return false;
@@ -220,7 +223,7 @@ public static class PokemonAttackGizmoUtility
         {
             var pawn = selectedObjectsListForReading[i] as Pawn;
             if (pawn != null && pawn.TryGetComp<CompPokemon>() != null &&
-                PokemonMasterUtility.IsPokemonMasterDrafted(pawn))
+                PokemonMasterUtility.IsPokemonDrafted(pawn))
             {
                 if (!flag && CanUseAnyRangedVerb(pawn))
                     flag = true;
