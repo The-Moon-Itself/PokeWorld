@@ -9,6 +9,10 @@
       <li>PokeWorld.CompProperties_Power</li>
       <li>PokeWorld.CompProperties_Power</li>
     </compWhitelist>
+    
+    <tabWhitelist>
+      <li>PokeWorld.ITab_Pawn_Moves</li>
+    </tabWhitelist>
 
     <!-- Anything that can plausibly manipulate things if given specialized tools qualify.
      E.g. Elephants have trunks. Spiders have limbs and possibly web to assist, etc. -->
