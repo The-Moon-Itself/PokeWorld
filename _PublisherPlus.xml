@@ -5,6 +5,8 @@
     <exclude>.idea</exclude>
     <exclude>1.4\Source</exclude>
     <exclude>1.5\Source</exclude>
-    <exlude>Release</exclude>
+    <exclude>1.6\Source</exclude>
+    <exclude>Release</exclude>
+    <exclude>Compat\BS_Sapient_Animals\1.6\Source</exclude>
   </Excluded>
 </Configuration>

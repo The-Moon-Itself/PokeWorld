@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36327.8 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SapientAnimalsPatches", "SapientAnimalsPatches\SapientAnimalsPatches.csproj", "{B606B3E5-C078-4B32-9E9E-C32BB0B25037}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B606B3E5-C078-4B32-9E9E-C32BB0B25037}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B606B3E5-C078-4B32-9E9E-C32BB0B25037}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B606B3E5-C078-4B32-9E9E-C32BB0B25037}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B606B3E5-C078-4B32-9E9E-C32BB0B25037}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3174ED4B-4E03-412D-9BA2-19D32D612598}
+	EndGlobalSection
+EndGlobal
