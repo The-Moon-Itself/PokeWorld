@@ -155,8 +155,8 @@
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/PokemonDessicated/PokemonDessicated</texPath>
-          <drawSize>1.0</drawSize>
+          <texPath>Things/Pawn/Pokemon/Gen_2/152_Chikorita/Desiccated_Chikorita</texPath>
+          <drawSize>1.9</drawSize>
         </dessicatedBodyGraphicData>
       </li>
     </lifeStages>
@@ -317,8 +317,8 @@
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/PokemonDessicated/PokemonDessicated</texPath>
-          <drawSize>1.1</drawSize>
+          <texPath>Things/Pawn/Pokemon/Gen_2/153_Bayleef/DesiccatedBayleef</texPath>
+          <drawSize>2.1</drawSize>
         </dessicatedBodyGraphicData>
       </li>
     </lifeStages>
@@ -472,8 +472,8 @@
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/PokemonDessicated/PokemonDessicated</texPath>
-          <drawSize>1.2</drawSize>
+          <texPath>Things/Pawn/Pokemon/Gen_2/154_Meganium/Desiccated_Meganium</texPath>
+          <drawSize>2.4</drawSize>
         </dessicatedBodyGraphicData>
         <femaleGraphicData>
           <texPath>Things/Pawn/Pokemon/Gen_2/154_Meganium/MeganiumFemale</texPath>
@@ -7818,8 +7818,8 @@
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/PokemonDessicated/PokemonDessicated</texPath>
-          <drawSize>0.9</drawSize>
+          <texPath>Things/Pawn/Pokemon/Gen_2/198_Murkrow/Desiccated_Murkrow</texPath>
+          <drawSize>1.7</drawSize>
         </dessicatedBodyGraphicData>
       </li>
     </lifeStages>
@@ -10270,8 +10270,8 @@
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/PokemonDessicated/PokemonDessicated</texPath>
-          <drawSize>1.2</drawSize>
+          <texPath>Things/Pawn/Pokemon/Gen_2/212_Scizor/Desiccated_Scizor</texPath>
+          <drawSize>2.4</drawSize>
         </dessicatedBodyGraphicData>
       </li>
     </lifeStages>
@@ -16502,8 +16502,8 @@
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/PokemonDessicated/PokemonDessicated</texPath>
-          <drawSize>3.6</drawSize>
+          <texPath>Things/Pawn/Pokemon/Gen_2/249_Lugia/Desiccated_Lugia</texPath>
+          <drawSize>7.1</drawSize>
         </dessicatedBodyGraphicData>
       </li>
     </lifeStages>
@@ -16658,8 +16658,8 @@
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/PokemonDessicated/PokemonDessicated</texPath>
-          <drawSize>3.1</drawSize>
+          <texPath>Things/Pawn/Pokemon/Gen_2/250_HoOh/Desiccated_HoOh</texPath>
+          <drawSize>6.3</drawSize>
         </dessicatedBodyGraphicData>
       </li>
     </lifeStages>
