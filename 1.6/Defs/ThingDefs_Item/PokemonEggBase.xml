@@ -44,6 +44,18 @@
 
   <ThingDef ParentName="PokemonEggBase">
     <defName>PW_PokemonEggsUnfertilized</defName>
+    <tradeability>None</tradeability>
+    <comps>
+      <li Class="PokeWorld.CompProperties_PokemonEggHatcher">
+        <hatcherDaystoHatch>13</hatcherDaystoHatch>
+        <hatcherPawn>PW_Bulbasaur</hatcherPawn>
+      </li>
+      <li Class="CompProperties_TemperatureRuinable">
+        <minSafeTemperature>0</minSafeTemperature>
+        <maxSafeTemperature>50</maxSafeTemperature>
+        <progressPerDegreePerTick>0.00001</progressPerDegreePerTick>
+      </li>
+    </comps>
     <label>Pokémon Egg (unfert.)</label>
     <description>An unfertilized Pokémon egg.</description>
     <statBases>

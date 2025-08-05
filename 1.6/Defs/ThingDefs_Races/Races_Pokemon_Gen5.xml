@@ -319,8 +319,8 @@
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/PokemonDessicated/PokemonDessicated</texPath>
-          <drawSize>0.9</drawSize>
+          <texPath>Things/Pawn/Pokemon/Gen_5/495_Snivy/Desiccated_Snivy</texPath>
+          <drawSize>1.8</drawSize>
         </dessicatedBodyGraphicData>
       </li>
     </lifeStages>
@@ -484,8 +484,8 @@
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/PokemonDessicated/PokemonDessicated</texPath>
-          <drawSize>0.9</drawSize>
+          <texPath>Things/Pawn/Pokemon/Gen_5/496_Servine/Desiccated_Servine</texPath>
+          <drawSize>1.9</drawSize>
         </dessicatedBodyGraphicData>
       </li>
     </lifeStages>
@@ -642,8 +642,8 @@
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/PokemonDessicated/PokemonDessicated</texPath>
-          <drawSize>1.5</drawSize>
+          <texPath>Things/Pawn/Pokemon/Gen_5/497_Serperior/Desiccated_Serperior</texPath>
+          <drawSize>3.0</drawSize>
         </dessicatedBodyGraphicData>
       </li>
     </lifeStages>
@@ -11496,8 +11496,8 @@
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/PokemonDessicated/PokemonDessicated</texPath>
-          <drawSize>0.9</drawSize>
+          <texPath>Things/Pawn/Pokemon/Gen_5/564_Tirtouga/Desiccated_Tirtouga</texPath>
+          <drawSize>1.8</drawSize>
         </dessicatedBodyGraphicData>
       </li>
     </lifeStages>
