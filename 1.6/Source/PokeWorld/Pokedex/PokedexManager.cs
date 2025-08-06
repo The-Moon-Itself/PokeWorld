@@ -56,7 +56,8 @@ public sealed class PokedexManager(World world) : WorldComponent(world)
     }
 
     public override void ExposeData()
-    {
+    { 
+        Scribe_Collections.Look(ref discoveredForm, "PW_discoverdForms", LookMode.Value, LookMode.Def);
         Scribe_Collections.Look(ref pokedex, "PW_pokedex", LookMode.Def, LookMode.Value);
     }
 
