@@ -74,7 +74,7 @@
 
   <!-- Include Krafs.Rimworld.Ref if Assembly-CSharp HintPath is not set -->
   <ItemGroup Condition="'@(Reference-&gt;WithMetadataValue('Identity', 'Assembly-CSharp')-&gt;Metadata('HintPath')-&gt;Exists())' == ''">
-    <PackageReference Include="Krafs.Rimworld.Ref" Version="1.5.*" />
+    <PackageReference Include="Krafs.Rimworld.Ref" Version="1.6.*" />
   </ItemGroup>
 
   <!-- Optionally include Publicizer -->
