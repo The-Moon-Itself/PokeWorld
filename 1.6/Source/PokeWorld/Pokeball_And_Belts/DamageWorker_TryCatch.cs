@@ -43,8 +43,11 @@ internal class DamageWorker_TryCatch : DamageWorker
                             var compXpEvGiver = pawn.TryGetComp<CompXpEvGiver>();
                             if (compXpEvGiver != null) compXpEvGiver.DistributeAfterCatch();
                             InteractionWorker_RecruitAttempt.DoRecruit(instigator, pawn);
-                            pawn.training.Train(DefDatabase<TrainableDef>.GetNamed("Obedience"), instigator, true);
-                            pawn.training.SetWantedRecursive(DefDatabase<TrainableDef>.GetNamed("Obedience"), true);
+                            if (pawn?.training != null)
+                            { 
+                                pawn.training.Train(DefDatabase<TrainableDef>.GetNamed("Obedience"), instigator, true);
+                                pawn.training.SetWantedRecursive(DefDatabase<TrainableDef>.GetNamed("Obedience"), true);
+                            }
                             pawn.ClearMind();
                             compPokemon.ballDef = compPokeballBelt.ballDef;
                             Find.World.GetComponent<PokedexManager>().AddPokemonKindCaught(compPokemon.PokedexNumber, pawn.kindDef);
