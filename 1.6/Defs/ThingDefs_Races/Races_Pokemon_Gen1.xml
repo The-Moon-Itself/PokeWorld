@@ -1,6 +1,5 @@
-<?xml version='1.0' encoding='utf8'?>
+<?xml version='1.0' encoding='UTF-8'?>
 <Defs>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Bulbasaur</defName>
     <label>Bulbasaur</label>
@@ -86,7 +85,7 @@
       <ToxicResistance>1</ToxicResistance>
       <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
       <Wildness>0.3</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -124,6 +123,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -161,7 +161,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Ivysaur</defName>
     <label>Ivysaur</label>
@@ -252,7 +251,7 @@
       <ToxicResistance>1</ToxicResistance>
       <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
       <Wildness>0.5</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -290,6 +289,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -327,7 +327,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Venusaur</defName>
     <label>Venusaur</label>
@@ -411,7 +410,7 @@
       <ToxicResistance>1</ToxicResistance>
       <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
       <Wildness>0.7</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -449,6 +448,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -494,7 +494,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Charmander</defName>
     <label>Charmander</label>
@@ -596,7 +595,7 @@
       <ToxicResistance>0.5</ToxicResistance>
       <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
       <Wildness>0.3</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -634,6 +633,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -671,7 +671,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Charmeleon</defName>
     <label>Charmeleon</label>
@@ -774,7 +773,7 @@
       <ToxicResistance>0.5</ToxicResistance>
       <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
       <Wildness>0.5</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -812,6 +811,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -849,7 +849,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Charizard</defName>
     <label>Charizard</label>
@@ -957,7 +956,7 @@
       <ToxicResistance>0.5</ToxicResistance>
       <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
       <Wildness>0.7</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -995,6 +994,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -1032,7 +1032,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Squirtle</defName>
     <label>Squirtle</label>
@@ -1129,7 +1128,7 @@
       <ToxicResistance>0.5</ToxicResistance>
       <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
       <Wildness>0.3</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -1167,6 +1166,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -1204,7 +1204,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Wartortle</defName>
     <label>Wartortle</label>
@@ -1302,7 +1301,7 @@
       <ToxicResistance>0.5</ToxicResistance>
       <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
       <Wildness>0.5</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -1340,6 +1339,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -1377,7 +1377,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Blastoise</defName>
     <label>Blastoise</label>
@@ -1471,7 +1470,7 @@
       <ToxicResistance>0.5</ToxicResistance>
       <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
       <Wildness>0.7</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -1509,6 +1508,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -1546,7 +1546,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Caterpie</defName>
     <label>Caterpie</label>
@@ -1622,7 +1621,7 @@
       <ToxicResistance>0.5</ToxicResistance>
       <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
       <Wildness>0.1</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -1660,6 +1659,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -1698,7 +1698,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Metapod</defName>
     <label>Metapod</label>
@@ -1766,7 +1765,7 @@
       <ToxicResistance>0.5</ToxicResistance>
       <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
       <Wildness>0.3</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -1804,6 +1803,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -1841,7 +1841,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Butterfree</defName>
     <label>Butterfree</label>
@@ -1924,7 +1923,7 @@
       <ToxicResistance>0.5</ToxicResistance>
       <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
       <Wildness>0.5</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -1962,6 +1961,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -1999,7 +1999,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Weedle</defName>
     <label>Weedle</label>
@@ -2076,7 +2075,7 @@
       <ToxicResistance>1</ToxicResistance>
       <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
       <Wildness>0.1</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -2114,6 +2113,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -2152,7 +2152,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Kakuna</defName>
     <label>Kakuna</label>
@@ -2221,7 +2220,7 @@
       <ToxicResistance>1</ToxicResistance>
       <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
       <Wildness>0.3</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -2259,6 +2258,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -2296,7 +2296,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Beedrill</defName>
     <label>Beedrill</label>
@@ -2371,7 +2370,7 @@
       <ToxicResistance>1</ToxicResistance>
       <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
       <Wildness>0.5</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -2409,6 +2408,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -2446,7 +2446,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Pidgey</defName>
     <label>Pidgey</label>
@@ -2539,7 +2538,7 @@
       <ToxicResistance>0.5</ToxicResistance>
       <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
       <Wildness>0.1</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -2577,6 +2576,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -2615,7 +2615,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Pidgeotto</defName>
     <label>Pidgeotto</label>
@@ -2708,7 +2707,7 @@
       <ToxicResistance>0.5</ToxicResistance>
       <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
       <Wildness>0.4</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -2746,6 +2745,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -2783,7 +2783,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Pidgeot</defName>
     <label>Pidgeot</label>
@@ -2869,7 +2868,7 @@
       <ToxicResistance>0.5</ToxicResistance>
       <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
       <Wildness>0.6</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -2907,6 +2906,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -2944,7 +2944,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Rattata</defName>
     <label>Rattata</label>
@@ -3036,7 +3035,7 @@
       <ToxicResistance>0.5</ToxicResistance>
       <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
       <Wildness>0.1</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -3074,6 +3073,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -3112,7 +3112,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Raticate</defName>
     <label>Raticate</label>
@@ -3197,7 +3196,7 @@
       <ToxicResistance>0.5</ToxicResistance>
       <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
       <Wildness>0.4</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -3235,6 +3234,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -3272,7 +3272,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Spearow</defName>
     <label>Spearow</label>
@@ -3353,7 +3352,7 @@
       <ToxicResistance>0.5</ToxicResistance>
       <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
       <Wildness>0.1</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -3391,6 +3390,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -3429,7 +3429,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Fearow</defName>
     <label>Fearow</label>
@@ -3503,7 +3502,7 @@
       <ToxicResistance>0.5</ToxicResistance>
       <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
       <Wildness>0.5</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -3541,6 +3540,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -3578,7 +3578,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Ekans</defName>
     <label>Ekans</label>
@@ -3663,7 +3662,7 @@
       <ToxicResistance>1</ToxicResistance>
       <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
       <Wildness>0.1</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -3701,6 +3700,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -3739,7 +3739,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Arbok</defName>
     <label>Arbok</label>
@@ -3833,7 +3832,7 @@
       <ToxicResistance>1</ToxicResistance>
       <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
       <Wildness>0.5</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -3871,6 +3870,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -3908,7 +3908,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Pikachu</defName>
     <label>Pikachu</label>
@@ -4009,7 +4008,7 @@
       <ToxicResistance>0.5</ToxicResistance>
       <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
       <Wildness>0.3</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -4047,6 +4046,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -4093,7 +4093,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Raichu</defName>
     <label>Raichu</label>
@@ -4171,7 +4170,7 @@
       <ToxicResistance>0.5</ToxicResistance>
       <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
       <Wildness>0.6</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -4209,6 +4208,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -4246,7 +4246,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Sandshrew</defName>
     <label>Sandshrew</label>
@@ -4354,7 +4353,7 @@
       <ToxicResistance>0.8</ToxicResistance>
       <ToxicEnvironmentResistance>0.8</ToxicEnvironmentResistance>
       <Wildness>0.1</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -4392,6 +4391,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -4430,7 +4430,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Sandslash</defName>
     <label>Sandslash</label>
@@ -4531,7 +4530,7 @@
       <ToxicResistance>0.8</ToxicResistance>
       <ToxicEnvironmentResistance>0.8</ToxicEnvironmentResistance>
       <Wildness>0.5</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -4569,6 +4568,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -4606,7 +4606,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_NidoranF</defName>
     <label>Nidoran♀</label>
@@ -4699,7 +4698,7 @@
       <ToxicResistance>1</ToxicResistance>
       <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
       <Wildness>0.1</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -4737,6 +4736,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -4775,7 +4775,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Nidorina</defName>
     <label>Nidorina</label>
@@ -4868,7 +4867,7 @@
       <ToxicResistance>1</ToxicResistance>
       <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
       <Wildness>0.4</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -4906,6 +4905,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -4944,7 +4944,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Nidoqueen</defName>
     <label>Nidoqueen</label>
@@ -5027,7 +5026,7 @@
       <ToxicResistance>1</ToxicResistance>
       <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
       <Wildness>0.6</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -5065,6 +5064,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -5102,7 +5102,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_NidoranM</defName>
     <label>Nidoran♂</label>
@@ -5191,7 +5190,7 @@
       <ToxicResistance>1</ToxicResistance>
       <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
       <Wildness>0.1</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -5229,6 +5228,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -5267,7 +5267,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Nidorino</defName>
     <label>Nidorino</label>
@@ -5356,7 +5355,7 @@
       <ToxicResistance>1</ToxicResistance>
       <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
       <Wildness>0.4</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -5394,6 +5393,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -5432,7 +5432,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Nidoking</defName>
     <label>Nidoking</label>
@@ -5511,7 +5510,7 @@
       <ToxicResistance>1</ToxicResistance>
       <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
       <Wildness>0.6</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -5549,6 +5548,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -5586,7 +5586,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Clefairy</defName>
     <label>Clefairy</label>
@@ -5662,7 +5661,7 @@
       <ToxicResistance>0.2</ToxicResistance>
       <ToxicEnvironmentResistance>0.2</ToxicEnvironmentResistance>
       <Wildness>0.3</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -5700,6 +5699,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -5738,7 +5738,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Clefable</defName>
     <label>Clefable</label>
@@ -5799,7 +5798,7 @@
       <ToxicResistance>0.2</ToxicResistance>
       <ToxicEnvironmentResistance>0.2</ToxicEnvironmentResistance>
       <Wildness>0.6</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -5837,6 +5836,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -5874,7 +5874,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Vulpix</defName>
     <label>Vulpix</label>
@@ -5979,7 +5978,7 @@
       <ToxicResistance>0.5</ToxicResistance>
       <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
       <Wildness>0.3</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -6017,6 +6016,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -6055,7 +6055,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Ninetales</defName>
     <label>Ninetales</label>
@@ -6130,7 +6129,7 @@
       <ToxicResistance>0.5</ToxicResistance>
       <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
       <Wildness>0.6</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -6168,6 +6167,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -6205,7 +6205,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Jigglypuff</defName>
     <label>Jigglypuff</label>
@@ -6286,7 +6285,7 @@
       <ToxicResistance>0.2</ToxicResistance>
       <ToxicEnvironmentResistance>0.2</ToxicEnvironmentResistance>
       <Wildness>0.2</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -6324,6 +6323,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -6362,7 +6362,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Wigglytuff</defName>
     <label>Wigglytuff</label>
@@ -6428,7 +6427,7 @@
       <ToxicResistance>0.2</ToxicResistance>
       <ToxicEnvironmentResistance>0.2</ToxicEnvironmentResistance>
       <Wildness>0.6</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -6466,6 +6465,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -6503,7 +6503,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Zubat</defName>
     <label>Zubat</label>
@@ -6600,7 +6599,7 @@
       <ToxicResistance>1</ToxicResistance>
       <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
       <Wildness>0.1</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -6638,6 +6637,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -6676,7 +6676,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Golbat</defName>
     <label>Golbat</label>
@@ -6774,7 +6773,7 @@
       <ToxicResistance>1</ToxicResistance>
       <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
       <Wildness>0.4</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -6812,6 +6811,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -6849,7 +6849,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Oddish</defName>
     <label>Oddish</label>
@@ -6938,7 +6937,7 @@
       <ToxicResistance>1</ToxicResistance>
       <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
       <Wildness>0.1</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -6976,6 +6975,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -7014,7 +7014,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Gloom</defName>
     <label>Gloom</label>
@@ -7104,7 +7103,7 @@
       <ToxicResistance>1</ToxicResistance>
       <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
       <Wildness>0.4</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -7142,6 +7141,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -7181,7 +7181,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Vileplume</defName>
     <label>Vileplume</label>
@@ -7251,7 +7250,7 @@
       <ToxicResistance>1</ToxicResistance>
       <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
       <Wildness>0.6</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -7289,6 +7288,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -7326,7 +7326,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Paras</defName>
     <label>Paras</label>
@@ -7416,7 +7415,7 @@
       <ToxicResistance>0.2</ToxicResistance>
       <ToxicEnvironmentResistance>0.2</ToxicEnvironmentResistance>
       <Wildness>0.1</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -7454,6 +7453,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -7492,7 +7492,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Parasect</defName>
     <label>Parasect</label>
@@ -7576,7 +7575,7 @@
       <ToxicResistance>0.2</ToxicResistance>
       <ToxicEnvironmentResistance>0.2</ToxicEnvironmentResistance>
       <Wildness>0.5</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -7614,6 +7613,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -7651,7 +7651,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Venonat</defName>
     <label>Venonat</label>
@@ -7748,7 +7747,7 @@
       <ToxicResistance>1</ToxicResistance>
       <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
       <Wildness>0.1</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -7786,6 +7785,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -7824,7 +7824,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Venomoth</defName>
     <label>Venomoth</label>
@@ -7923,7 +7922,7 @@
       <ToxicResistance>1</ToxicResistance>
       <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
       <Wildness>0.5</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -7961,6 +7960,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -7998,7 +7998,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Diglett</defName>
     <label>Diglett</label>
@@ -8094,7 +8093,7 @@
       <ToxicResistance>0.8</ToxicResistance>
       <ToxicEnvironmentResistance>0.8</ToxicEnvironmentResistance>
       <Wildness>0.1</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -8132,6 +8131,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -8170,7 +8170,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Dugtrio</defName>
     <label>Dugtrio</label>
@@ -8267,7 +8266,7 @@
       <ToxicResistance>0.8</ToxicResistance>
       <ToxicEnvironmentResistance>0.8</ToxicEnvironmentResistance>
       <Wildness>0.5</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -8305,6 +8304,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -8342,7 +8342,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Meowth</defName>
     <label>Meowth</label>
@@ -8439,7 +8438,7 @@
       <ToxicResistance>0.5</ToxicResistance>
       <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
       <Wildness>0.2</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -8477,6 +8476,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -8515,7 +8515,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Persian</defName>
     <label>Persian</label>
@@ -8612,7 +8611,7 @@
       <ToxicResistance>0.5</ToxicResistance>
       <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
       <Wildness>0.5</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -8650,6 +8649,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -8687,7 +8687,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Psyduck</defName>
     <label>Psyduck</label>
@@ -8788,7 +8787,7 @@
       <ToxicResistance>0.5</ToxicResistance>
       <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
       <Wildness>0.1</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -8826,6 +8825,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -8864,7 +8864,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Golduck</defName>
     <label>Golduck</label>
@@ -8958,7 +8957,7 @@
       <ToxicResistance>0.5</ToxicResistance>
       <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
       <Wildness>0.5</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -8996,6 +8995,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -9033,7 +9033,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Mankey</defName>
     <label>Mankey</label>
@@ -9125,7 +9124,7 @@
       <ToxicResistance>0.5</ToxicResistance>
       <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
       <Wildness>0.1</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -9163,6 +9162,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -9201,7 +9201,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Primeape</defName>
     <label>Primeape</label>
@@ -9286,7 +9285,7 @@
       <ToxicResistance>0.5</ToxicResistance>
       <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
       <Wildness>0.5</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -9324,6 +9323,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -9361,7 +9361,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Growlithe</defName>
     <label>Growlithe</label>
@@ -9462,7 +9461,7 @@
       <ToxicResistance>0.5</ToxicResistance>
       <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
       <Wildness>0.3</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -9500,6 +9499,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -9538,7 +9538,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Arcanine</defName>
     <label>Arcanine</label>
@@ -9616,7 +9615,7 @@
       <ToxicResistance>0.5</ToxicResistance>
       <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
       <Wildness>0.6</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -9654,6 +9653,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -9691,7 +9691,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Poliwag</defName>
     <label>Poliwag</label>
@@ -9783,7 +9782,7 @@
       <ToxicResistance>0.5</ToxicResistance>
       <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
       <Wildness>0.1</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -9821,6 +9820,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -9859,7 +9859,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Poliwhirl</defName>
     <label>Poliwhirl</label>
@@ -9956,7 +9955,7 @@
       <ToxicResistance>0.5</ToxicResistance>
       <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
       <Wildness>0.4</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -9994,6 +9993,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -10033,7 +10033,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Poliwrath</defName>
     <label>Poliwrath</label>
@@ -10099,7 +10098,7 @@
       <ToxicResistance>0.5</ToxicResistance>
       <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
       <Wildness>0.6</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -10137,6 +10136,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -10174,7 +10174,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Abra</defName>
     <label>Abra</label>
@@ -10242,7 +10241,7 @@
       <ToxicResistance>0.5</ToxicResistance>
       <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
       <Wildness>0.3</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -10280,6 +10279,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -10317,7 +10317,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Kadabra</defName>
     <label>Kadabra</label>
@@ -10397,7 +10396,7 @@
       <ToxicResistance>0.5</ToxicResistance>
       <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
       <Wildness>0.5</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -10435,6 +10434,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -10472,7 +10472,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Alakazam</defName>
     <label>Alakazam</label>
@@ -10545,7 +10544,7 @@
       <ToxicResistance>0.5</ToxicResistance>
       <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
       <Wildness>0.7</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -10583,6 +10582,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -10620,7 +10620,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Machop</defName>
     <label>Machop</label>
@@ -10696,7 +10695,7 @@
       <ToxicResistance>0.5</ToxicResistance>
       <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
       <Wildness>0.2</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -10734,6 +10733,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -10772,7 +10772,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Machoke</defName>
     <label>Machoke</label>
@@ -10848,7 +10847,7 @@
       <ToxicResistance>0.5</ToxicResistance>
       <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
       <Wildness>0.4</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -10886,6 +10885,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -10923,7 +10923,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Machamp</defName>
     <label>Machamp</label>
@@ -10992,7 +10991,7 @@
       <ToxicResistance>0.5</ToxicResistance>
       <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
       <Wildness>0.7</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -11030,6 +11029,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -11067,7 +11067,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Bellsprout</defName>
     <label>Bellsprout</label>
@@ -11152,7 +11151,7 @@
       <ToxicResistance>1</ToxicResistance>
       <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
       <Wildness>0.1</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -11190,6 +11189,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -11228,7 +11228,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Weepinbell</defName>
     <label>Weepinbell</label>
@@ -11313,7 +11312,7 @@
       <ToxicResistance>1</ToxicResistance>
       <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
       <Wildness>0.3</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -11351,6 +11350,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -11389,7 +11389,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Victreebel</defName>
     <label>Victreebel</label>
@@ -11463,7 +11462,7 @@
       <ToxicResistance>1</ToxicResistance>
       <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
       <Wildness>0.6</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -11501,6 +11500,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -11538,7 +11538,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Tentacool</defName>
     <label>Tentacool</label>
@@ -11635,7 +11634,7 @@
       <ToxicResistance>1</ToxicResistance>
       <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
       <Wildness>0.1</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -11673,6 +11672,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -11711,7 +11711,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Tentacruel</defName>
     <label>Tentacruel</label>
@@ -11801,7 +11800,7 @@
       <ToxicResistance>1</ToxicResistance>
       <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
       <Wildness>0.5</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -11839,6 +11838,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -11876,7 +11876,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Geodude</defName>
     <label>Geodude</label>
@@ -11969,7 +11968,7 @@
       <ToxicResistance>1</ToxicResistance>
       <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
       <Wildness>0.1</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -12008,6 +12007,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -12046,7 +12046,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Graveler</defName>
     <label>Graveler</label>
@@ -12139,7 +12138,7 @@
       <ToxicResistance>1</ToxicResistance>
       <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
       <Wildness>0.4</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -12178,6 +12177,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -12215,7 +12215,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Golem</defName>
     <label>Golem</label>
@@ -12301,7 +12300,7 @@
       <ToxicResistance>1</ToxicResistance>
       <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
       <Wildness>0.7</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -12340,6 +12339,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -12377,7 +12377,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Ponyta</defName>
     <label>Ponyta</label>
@@ -12470,7 +12469,7 @@
       <ToxicResistance>0.5</ToxicResistance>
       <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
       <Wildness>0.3</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -12508,6 +12507,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -12545,7 +12545,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Rapidash</defName>
     <label>Rapidash</label>
@@ -12639,7 +12638,7 @@
       <ToxicResistance>0.5</ToxicResistance>
       <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
       <Wildness>0.6</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -12677,6 +12676,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -12714,7 +12714,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Slowpoke</defName>
     <label>Slowpoke</label>
@@ -12817,7 +12816,7 @@
       <ToxicResistance>0.5</ToxicResistance>
       <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
       <Wildness>0.2</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -12855,6 +12854,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -12894,7 +12894,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Slowbro</defName>
     <label>Slowbro</label>
@@ -12985,7 +12984,7 @@
       <ToxicResistance>0.5</ToxicResistance>
       <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
       <Wildness>0.6</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -13023,6 +13022,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -13060,7 +13060,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Magnemite</defName>
     <label>Magnemite</label>
@@ -13165,7 +13164,7 @@
       <ToxicResistance>1</ToxicResistance>
       <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
       <Wildness>0.2</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -13205,6 +13204,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -13243,7 +13243,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Magneton</defName>
     <label>Magneton</label>
@@ -13348,7 +13347,7 @@
       <ToxicResistance>1</ToxicResistance>
       <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
       <Wildness>0.5</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -13388,6 +13387,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -13426,7 +13426,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Farfetchd</defName>
     <label>Farfetch'd</label>
@@ -13528,7 +13527,7 @@
       <ToxicResistance>0.5</ToxicResistance>
       <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
       <Wildness>0.4</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -13566,6 +13565,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -13603,7 +13603,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Doduo</defName>
     <label>Doduo</label>
@@ -13688,7 +13687,7 @@
       <ToxicResistance>0.5</ToxicResistance>
       <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
       <Wildness>0.2</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -13726,6 +13725,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -13764,7 +13764,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Dodrio</defName>
     <label>Dodrio</label>
@@ -13842,7 +13841,7 @@
       <ToxicResistance>0.5</ToxicResistance>
       <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
       <Wildness>0.5</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -13880,6 +13879,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -13917,7 +13917,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Seel</defName>
     <label>Seel</label>
@@ -14014,7 +14013,7 @@
       <ToxicResistance>0.5</ToxicResistance>
       <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
       <Wildness>0.2</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -14052,6 +14051,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -14090,7 +14090,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Dewgong</defName>
     <label>Dewgong</label>
@@ -14190,7 +14189,7 @@
       <ToxicResistance>0.5</ToxicResistance>
       <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
       <Wildness>0.6</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -14228,6 +14227,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -14265,7 +14265,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Grimer</defName>
     <label>Grimer</label>
@@ -14341,7 +14340,7 @@
       <ToxicResistance>1</ToxicResistance>
       <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
       <Wildness>0.2</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -14379,6 +14378,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -14417,7 +14417,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Muk</defName>
     <label>Muk</label>
@@ -14487,7 +14486,7 @@
       <ToxicResistance>1</ToxicResistance>
       <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
       <Wildness>0.6</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -14525,6 +14524,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -14562,7 +14562,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Shellder</defName>
     <label>Shellder</label>
@@ -14654,7 +14653,7 @@
       <ToxicResistance>0.5</ToxicResistance>
       <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
       <Wildness>0.2</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -14692,6 +14691,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -14731,7 +14731,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Cloyster</defName>
     <label>Cloyster</label>
@@ -14806,7 +14805,7 @@
       <ToxicResistance>0.5</ToxicResistance>
       <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
       <Wildness>0.6</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -14844,6 +14843,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -14881,7 +14881,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Gastly</defName>
     <label>Gastly</label>
@@ -14970,7 +14969,7 @@
       <ToxicResistance>1</ToxicResistance>
       <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
       <Wildness>0.2</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -15008,6 +15007,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -15046,7 +15046,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Haunter</defName>
     <label>Haunter</label>
@@ -15135,7 +15134,7 @@
       <ToxicResistance>1</ToxicResistance>
       <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
       <Wildness>0.5</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -15173,6 +15172,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -15210,7 +15210,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Gengar</defName>
     <label>Gengar</label>
@@ -15292,7 +15291,7 @@
       <ToxicResistance>1</ToxicResistance>
       <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
       <Wildness>0.7</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -15330,6 +15329,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -15367,7 +15367,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Onix</defName>
     <label>Onix</label>
@@ -15464,7 +15463,7 @@
       <ToxicResistance>1</ToxicResistance>
       <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
       <Wildness>0.5</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -15503,6 +15502,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -15540,7 +15540,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Drowzee</defName>
     <label>Drowzee</label>
@@ -15632,7 +15631,7 @@
       <ToxicResistance>0.5</ToxicResistance>
       <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
       <Wildness>0.2</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -15670,6 +15669,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -15708,7 +15708,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Hypno</defName>
     <label>Hypno</label>
@@ -15793,7 +15792,7 @@
       <ToxicResistance>0.5</ToxicResistance>
       <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
       <Wildness>0.6</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -15831,6 +15830,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -15868,7 +15868,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Krabby</defName>
     <label>Krabby</label>
@@ -15952,7 +15951,7 @@
       <ToxicResistance>0.5</ToxicResistance>
       <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
       <Wildness>0.1</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -15990,6 +15989,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -16028,7 +16028,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Kingler</defName>
     <label>Kingler</label>
@@ -16105,7 +16104,7 @@
       <ToxicResistance>0.5</ToxicResistance>
       <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
       <Wildness>0.5</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -16143,6 +16142,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -16180,7 +16180,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Voltorb</defName>
     <label>Voltorb</label>
@@ -16280,7 +16279,7 @@
       <ToxicResistance>0.5</ToxicResistance>
       <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
       <Wildness>0.2</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -16319,6 +16318,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -16357,7 +16357,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Electrode</defName>
     <label>Electrode</label>
@@ -16450,7 +16449,7 @@
       <ToxicResistance>0.5</ToxicResistance>
       <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
       <Wildness>0.5</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -16489,6 +16488,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -16526,7 +16526,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Exeggcute</defName>
     <label>Exeggcute</label>
@@ -16607,7 +16606,7 @@
       <ToxicResistance>0.2</ToxicResistance>
       <ToxicEnvironmentResistance>0.2</ToxicEnvironmentResistance>
       <Wildness>0.2</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -16645,6 +16644,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -16684,7 +16684,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Exeggutor</defName>
     <label>Exeggutor</label>
@@ -16754,7 +16753,7 @@
       <ToxicResistance>0.2</ToxicResistance>
       <ToxicEnvironmentResistance>0.2</ToxicEnvironmentResistance>
       <Wildness>0.6</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -16792,6 +16791,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -16829,7 +16829,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Cubone</defName>
     <label>Cubone</label>
@@ -16901,7 +16900,7 @@
       <ToxicResistance>0.8</ToxicResistance>
       <ToxicEnvironmentResistance>0.8</ToxicEnvironmentResistance>
       <Wildness>0.3</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -16939,6 +16938,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -16976,7 +16976,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Marowak</defName>
     <label>Marowak</label>
@@ -17041,7 +17040,7 @@
       <ToxicResistance>0.8</ToxicResistance>
       <ToxicEnvironmentResistance>0.8</ToxicEnvironmentResistance>
       <Wildness>0.6</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -17079,6 +17078,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -17116,7 +17116,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Hitmonlee</defName>
     <label>Hitmonlee</label>
@@ -17189,7 +17188,7 @@
       <ToxicResistance>0.5</ToxicResistance>
       <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
       <Wildness>0.5</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -17227,6 +17226,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -17264,7 +17264,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Hitmonchan</defName>
     <label>Hitmonchan</label>
@@ -17349,7 +17348,7 @@
       <ToxicResistance>0.5</ToxicResistance>
       <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
       <Wildness>0.5</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -17387,6 +17386,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -17424,7 +17424,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Lickitung</defName>
     <label>Lickitung</label>
@@ -17500,7 +17499,7 @@
       <ToxicResistance>0.5</ToxicResistance>
       <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
       <Wildness>0.3</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -17538,6 +17537,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -17576,7 +17576,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Koffing</defName>
     <label>Koffing</label>
@@ -17656,7 +17655,7 @@
       <ToxicResistance>1</ToxicResistance>
       <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
       <Wildness>0.1</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -17694,6 +17693,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -17732,7 +17732,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Weezing</defName>
     <label>Weezing</label>
@@ -17805,7 +17804,7 @@
       <ToxicResistance>1</ToxicResistance>
       <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
       <Wildness>0.5</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -17843,6 +17842,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -17880,7 +17880,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Rhyhorn</defName>
     <label>Rhyhorn</label>
@@ -17970,7 +17969,7 @@
       <ToxicResistance>1</ToxicResistance>
       <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
       <Wildness>0.4</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -18009,6 +18008,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -18046,7 +18046,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Rhydon</defName>
     <label>Rhydon</label>
@@ -18140,7 +18139,7 @@
       <ToxicResistance>1</ToxicResistance>
       <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
       <Wildness>0.6</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -18179,6 +18178,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -18217,7 +18217,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Chansey</defName>
     <label>Chansey</label>
@@ -18293,7 +18292,7 @@
       <ToxicResistance>0.5</ToxicResistance>
       <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
       <Wildness>0.6</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -18331,6 +18330,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -18369,7 +18369,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Tangela</defName>
     <label>Tangela</label>
@@ -18457,7 +18456,7 @@
       <ToxicResistance>0.2</ToxicResistance>
       <ToxicEnvironmentResistance>0.2</ToxicEnvironmentResistance>
       <Wildness>0.3</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -18495,6 +18494,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -18532,7 +18532,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Kangaskhan</defName>
     <label>Kangaskhan</label>
@@ -18609,7 +18608,7 @@
       <ToxicResistance>0.5</ToxicResistance>
       <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
       <Wildness>0.5</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -18647,6 +18646,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -18684,7 +18684,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Horsea</defName>
     <label>Horsea</label>
@@ -18777,7 +18776,7 @@
       <ToxicResistance>0.5</ToxicResistance>
       <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
       <Wildness>0.2</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -18815,6 +18814,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -18853,7 +18853,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Seadra</defName>
     <label>Seadra</label>
@@ -18947,7 +18946,7 @@
       <ToxicResistance>0.5</ToxicResistance>
       <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
       <Wildness>0.6</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -18985,6 +18984,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -19022,7 +19022,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Goldeen</defName>
     <label>Goldeen</label>
@@ -19102,7 +19101,7 @@
       <ToxicResistance>0.5</ToxicResistance>
       <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
       <Wildness>0.1</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -19140,6 +19139,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -19178,7 +19178,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Seaking</defName>
     <label>Seaking</label>
@@ -19255,7 +19254,7 @@
       <ToxicResistance>0.5</ToxicResistance>
       <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
       <Wildness>0.5</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -19293,6 +19292,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -19330,7 +19330,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Staryu</defName>
     <label>Staryu</label>
@@ -19434,7 +19433,7 @@
       <ToxicResistance>0.5</ToxicResistance>
       <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
       <Wildness>0.2</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -19473,6 +19472,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -19512,7 +19512,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Starmie</defName>
     <label>Starmie</label>
@@ -19586,7 +19585,7 @@
       <ToxicResistance>0.5</ToxicResistance>
       <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
       <Wildness>0.6</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -19625,6 +19624,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -19662,7 +19662,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_MrMime</defName>
     <label>Mr. Mime</label>
@@ -19755,7 +19754,7 @@
       <ToxicResistance>0.2</ToxicResistance>
       <ToxicEnvironmentResistance>0.2</ToxicEnvironmentResistance>
       <Wildness>0.5</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -19793,6 +19792,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -19830,7 +19830,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Scyther</defName>
     <label>Scyther</label>
@@ -19927,7 +19926,7 @@
       <ToxicResistance>0.5</ToxicResistance>
       <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
       <Wildness>0.5</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -19965,6 +19964,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -20002,7 +20002,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Jynx</defName>
     <label>Jynx</label>
@@ -20089,7 +20088,7 @@
       <ToxicResistance>0.5</ToxicResistance>
       <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
       <Wildness>0.5</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -20127,6 +20126,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -20164,7 +20164,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Electabuzz</defName>
     <label>Electabuzz</label>
@@ -20272,7 +20271,7 @@
       <ToxicResistance>0.5</ToxicResistance>
       <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
       <Wildness>0.4</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -20310,6 +20309,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -20348,7 +20348,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Magmar</defName>
     <label>Magmar</label>
@@ -20449,7 +20448,7 @@
       <ToxicResistance>0.5</ToxicResistance>
       <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
       <Wildness>0.4</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -20487,6 +20486,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -20525,7 +20525,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Pinsir</defName>
     <label>Pinsir</label>
@@ -20594,7 +20593,7 @@
       <ToxicResistance>0.5</ToxicResistance>
       <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
       <Wildness>0.5</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -20632,6 +20631,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -20669,7 +20669,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Tauros</defName>
     <label>Tauros</label>
@@ -20747,7 +20746,7 @@
       <ToxicResistance>0.5</ToxicResistance>
       <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
       <Wildness>0.4</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -20785,6 +20784,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -20822,7 +20822,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Magikarp</defName>
     <label>Magikarp</label>
@@ -20895,7 +20894,7 @@
       <ToxicResistance>0.5</ToxicResistance>
       <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
       <Wildness>0.1</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -20933,6 +20932,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -20971,7 +20971,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Gyarados</defName>
     <label>Gyarados</label>
@@ -21066,7 +21065,7 @@
       <ToxicResistance>0.5</ToxicResistance>
       <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
       <Wildness>0.7</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -21104,6 +21103,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -21141,7 +21141,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Lapras</defName>
     <label>Lapras</label>
@@ -21229,7 +21228,7 @@
       <ToxicResistance>0.5</ToxicResistance>
       <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
       <Wildness>0.6</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -21267,6 +21266,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -21304,7 +21304,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Ditto</defName>
     <label>Ditto</label>
@@ -21362,7 +21361,7 @@
       <ToxicResistance>0.5</ToxicResistance>
       <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
       <Wildness>0.5</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -21401,6 +21400,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -21438,7 +21438,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Eevee</defName>
     <label>Eevee</label>
@@ -21565,7 +21564,7 @@
       <ToxicResistance>0.5</ToxicResistance>
       <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
       <Wildness>0.3</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -21603,6 +21602,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -21646,7 +21646,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Vaporeon</defName>
     <label>Vaporeon</label>
@@ -21731,7 +21730,7 @@
       <ToxicResistance>0.5</ToxicResistance>
       <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
       <Wildness>0.7</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -21769,6 +21768,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -21806,7 +21806,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Jolteon</defName>
     <label>Jolteon</label>
@@ -21899,7 +21898,7 @@
       <ToxicResistance>0.5</ToxicResistance>
       <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
       <Wildness>0.7</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -21937,6 +21936,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -21974,7 +21974,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Flareon</defName>
     <label>Flareon</label>
@@ -22068,7 +22067,7 @@
       <ToxicResistance>0.5</ToxicResistance>
       <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
       <Wildness>0.7</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -22106,6 +22105,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -22143,7 +22143,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Porygon</defName>
     <label>Porygon</label>
@@ -22234,7 +22233,7 @@
       <ToxicResistance>0.5</ToxicResistance>
       <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
       <Wildness>0.5</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -22274,6 +22273,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -22313,7 +22313,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Omanyte</defName>
     <label>Omanyte</label>
@@ -22414,7 +22413,7 @@
       <ToxicResistance>0.8</ToxicResistance>
       <ToxicEnvironmentResistance>0.8</ToxicEnvironmentResistance>
       <Wildness>0.4</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -22454,6 +22453,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -22492,7 +22492,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Omastar</defName>
     <label>Omastar</label>
@@ -22586,7 +22585,7 @@
       <ToxicResistance>0.8</ToxicResistance>
       <ToxicEnvironmentResistance>0.8</ToxicEnvironmentResistance>
       <Wildness>0.6</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -22626,6 +22625,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -22664,7 +22664,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Kabuto</defName>
     <label>Kabuto</label>
@@ -22757,7 +22756,7 @@
       <ToxicResistance>0.8</ToxicResistance>
       <ToxicEnvironmentResistance>0.8</ToxicEnvironmentResistance>
       <Wildness>0.4</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -22797,6 +22796,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -22835,7 +22835,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Kabutops</defName>
     <label>Kabutops</label>
@@ -22929,7 +22928,7 @@
       <ToxicResistance>0.8</ToxicResistance>
       <ToxicEnvironmentResistance>0.8</ToxicEnvironmentResistance>
       <Wildness>0.6</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -22969,6 +22968,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -23007,7 +23007,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Aerodactyl</defName>
     <label>Aerodactyl</label>
@@ -23116,7 +23115,7 @@
       <ToxicResistance>0.8</ToxicResistance>
       <ToxicEnvironmentResistance>0.8</ToxicEnvironmentResistance>
       <Wildness>0.7</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -23156,6 +23155,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -23194,7 +23194,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Snorlax</defName>
     <label>Snorlax</label>
@@ -23275,7 +23274,7 @@
       <ToxicResistance>0.5</ToxicResistance>
       <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
       <Wildness>0.6</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -23313,6 +23312,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -23350,7 +23350,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Articuno</defName>
     <label>Articuno</label>
@@ -23435,7 +23434,7 @@
       <ToxicResistance>0.5</ToxicResistance>
       <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
       <Wildness>1.0</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -23475,6 +23474,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -23513,7 +23513,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Zapdos</defName>
     <label>Zapdos</label>
@@ -23597,7 +23596,7 @@
       <ToxicResistance>0.5</ToxicResistance>
       <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
       <Wildness>1.0</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -23637,6 +23636,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -23675,7 +23675,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Moltres</defName>
     <label>Moltres</label>
@@ -23760,7 +23759,7 @@
       <ToxicResistance>0.5</ToxicResistance>
       <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
       <Wildness>1.0</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -23800,6 +23799,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -23838,7 +23838,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Dratini</defName>
     <label>Dratini</label>
@@ -23935,7 +23934,7 @@
       <ToxicResistance>0.5</ToxicResistance>
       <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
       <Wildness>0.5</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -23973,6 +23972,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -24010,7 +24010,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Dragonair</defName>
     <label>Dragonair</label>
@@ -24107,7 +24106,7 @@
       <ToxicResistance>0.5</ToxicResistance>
       <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
       <Wildness>0.7</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -24145,6 +24144,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -24182,7 +24182,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Dragonite</defName>
     <label>Dragonite</label>
@@ -24285,7 +24284,7 @@
       <ToxicResistance>0.5</ToxicResistance>
       <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
       <Wildness>0.9</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -24323,6 +24322,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -24360,7 +24360,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Mewtwo</defName>
     <label>Mewtwo</label>
@@ -24431,7 +24430,7 @@
       <ToxicResistance>0.5</ToxicResistance>
       <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
       <Wildness>1.0</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -24471,6 +24470,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -24509,7 +24509,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>PW_Mew</defName>
     <label>Mew</label>
@@ -24576,7 +24575,7 @@
       <ToxicResistance>0.5</ToxicResistance>
       <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
       <Wildness>1.0</Wildness>
-  </statBases>
+    </statBases>
     <inspectorTabs>
       <li>PokeWorld.ITab_Pawn_Moves</li>
     </inspectorTabs>
@@ -24616,6 +24615,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
       <soundCallIntervalRange>3000~6000</soundCallIntervalRange>
+      <renderTree>PW_Pokemon</renderTree>
     </race>
     <recipes>
       <li>PW_AdministerPotion</li>
@@ -24654,5 +24654,4 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
 </Defs>

@@ -62,8 +62,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Main_Harmony_Patch.cs" />
-    <Compile Include="SapientAnimals_RaceMorpher_SwapAnimalToSapientVersion.cs" />
+    <Compile Include="Patches\Main_Harmony_Patch.cs" />
+    <Compile Include="Patches\SapientAnimals_RaceMorpher_SwapAnimalToSapientVersion.cs" />
+    <Compile Include="Rendering\PawnRenderNode_HPokemonPart.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
