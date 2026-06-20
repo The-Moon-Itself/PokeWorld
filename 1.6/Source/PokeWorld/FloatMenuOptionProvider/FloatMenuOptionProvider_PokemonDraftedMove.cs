@@ -107,12 +107,12 @@ internal class FloatMenuOptionProvider_PokemonDraftedMove : FloatMenuOptionProvi
         if (pawn.Position == gotoLoc)
         {
             flag = true;
-            if (pawn.CurJobDef == JobDefOf.Goto)
+            if (pawn.CurJobDef == DefDatabase<JobDef>.GetNamed("PW_PokemonGotoForced"))
             {
                 pawn.jobs.EndCurrentJob(JobCondition.Succeeded);
             }
         }
-        else if (pawn.CurJobDef == JobDefOf.Goto && pawn.CurJob.targetA.Cell == gotoLoc)
+        else if (pawn.CurJobDef == DefDatabase<JobDef>.GetNamed("PW_PokemonGotoForced") && pawn.CurJob.targetA.Cell == gotoLoc)
         {
             flag = true;
         }
